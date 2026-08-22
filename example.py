@@ -34,5 +34,26 @@
 
 # print(age)
 
-age = 25
-print("age: " + str(25))
+# age = 25
+# print("age: " + str(25))
+
+# print("ha" *50)
+
+# case converssion method
+
+text = "shanmukha is belive our ownself"
+# print(text)
+# print(text.upper())
+# print(text.lower())
+# print(text.title())
+# print(text.capitalize())
+
+# user_input = input("Enter yes or no: ")
+# if user_input.lower() == "yes":
+#     print("confirmed")
+
+text = "      shanmukha     "
+
+print(text.strip())
+print(text.lstrip())
+print(text.rstrip())
