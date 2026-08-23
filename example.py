@@ -41,27 +41,17 @@
 
 # case converssion method
 
-text = "shanmukha is belive our ownself"
+#text = "shanmukha is belive our ownself"
 # print(text)
 # print(text.upper())
 # print(text.lower())
 # print(text.title())
 # print(text.capitalize())
 
-# user_input = input("Enter yes or no: ")
-# if user_input.lower() == "yes":
-#     print("confirmed")
-
-text = "      shanmukha     "
-
-# print(text.strip())
-# print(text.lstrip())
-# print(text.rstrip())
-
-
-#user input taken
-
-user_input = input("Enter your name:  ")
-user_input = user_input.strip()
-
-
+username = input("Enter your name:  ")
+username = username.strip()
+username = username.lower()
+print(username)
+username = username.upper()
+username = username.strip()
+print(username)
