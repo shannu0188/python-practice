@@ -48,6 +48,7 @@
 # print(text.title())
 # print(text.capitalize())
 
+<<<<<<< HEAD
 username = input("Enter your name:  ")
 username = username.strip()
 username = username.lower()
@@ -55,3 +56,22 @@ print(username)
 username = username.upper()
 username = username.strip()
 print(username)
+=======
+# user_input = input("Enter yes or no: ")
+# if user_input.lower() == "yes":
+#     print("confirmed")
+
+#text = "      shanmukha     "
+
+# print(text.strip())
+# print(text.lstrip())
+# print(text.rstrip())
+
+
+#user input taken
+
+#user_input = input("Enter your name:  ")
+#user_input = user_input.strip()
+
+
+>>>>>>> f1c465ba40687cdcb898dd1aaac4a9240b18d62d
