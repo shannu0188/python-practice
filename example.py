@@ -54,6 +54,14 @@ text = "shanmukha is belive our ownself"
 
 text = "      shanmukha     "
 
-print(text.strip())
-print(text.lstrip())
-print(text.rstrip())
+# print(text.strip())
+# print(text.lstrip())
+# print(text.rstrip())
+
+
+#user input taken
+
+user_input = input("Enter your name:  ")
+user_input = user_input.strip()
+
+
