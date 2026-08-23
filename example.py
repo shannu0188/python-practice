@@ -52,7 +52,7 @@ text = "shanmukha is belive our ownself"
 # if user_input.lower() == "yes":
 #     print("confirmed")
 
-text = "      shanmukha     "
+#text = "      shanmukha     "
 
 # print(text.strip())
 # print(text.lstrip())
@@ -61,7 +61,7 @@ text = "      shanmukha     "
 
 #user input taken
 
-user_input = input("Enter your name:  ")
-user_input = user_input.strip()
+#user_input = input("Enter your name:  ")
+#user_input = user_input.strip()
 
 
