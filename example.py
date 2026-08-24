@@ -58,11 +58,21 @@
 # print(username)
 # print(len(username))
 
-#if else how its work 
-
+# if else how its work 
 
 # if "Hello":
 #     print("good")
-if 0:
-    print("never")
-    
+# if None:
+#    print("never")
+# if [1, 2, 3]:
+#      print("has items")
+
+#simple example for voting method    
+text = str(input("hii what is your name:   "))
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print(text, "u can vote")
+else:
+    print(text, "sorry u r under age")
