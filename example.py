@@ -84,10 +84,30 @@
 # print(bin((ord("A"))))
 # print(round(0.1 + 0.2, 10))
 
-a = 10
-b = "shanmukha"
-c = 0.1
+# a = 10
+# b = "shanmukha"
+# c = 0.1
 
-print(type(a))
-print(type(b))
-print(type(c))
+# print(type(a))
+# print(type(b))
+# print(type(c))
+
+# big = 10 * 100
+# print(big)
+# print(type(big))
+# population = 80_000_000_0
+# print(population)
+
+# price =99.99
+# temp = -3.5
+# print(type(price))
+
+# p = 0.1 + 0.2 
+
+# print(round(p, 16))
+
+# print(10 / 3)
+# print(10 // 3)
+# print(10 % 8)
+
+print(-7 // 2)
