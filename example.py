@@ -80,5 +80,14 @@
 #binary to decimal conversion
 # print(bin(-1))
 
-print(ord("A"))
-print(bin((ord("A"))))
+# print(ord("A"))
+# print(bin((ord("A"))))
+# print(round(0.1 + 0.2, 10))
+
+a = 10
+b = "shanmukha"
+c = 0.1
+
+print(type(a))
+print(type(b))
+print(type(c))
