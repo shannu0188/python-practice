@@ -68,11 +68,17 @@
 #      print("has items")
 
 #simple example for voting method    
-text = str(input("hii what is your name:   "))
+# text = str(input("hii what is your name:   "))
 
-age = int(input("Enter your age: "))
+# age = int(input("Enter your age: "))
 
-if age >= 18:
-    print(text, "u can vote")
-else:
-    print(text, "sorry u r under age")
+# if age >= 18:
+#     print(text, "u can vote")
+# else:
+#     print(text, "sorry u r under age")
+
+#binary to decimal conversion
+# print(bin(-1))
+
+print(ord("A"))
+print(bin((ord("A"))))
