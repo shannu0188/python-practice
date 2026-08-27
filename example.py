@@ -110,4 +110,16 @@
 # print(10 // 3)
 # print(10 % 8)
 
-print(-7 // 2)
+# print(-7 / 2)
+
+#logical operators(using and, or, not)
+
+age = 25
+has_id = False
+
+print(age >=18 and has_id)
+print(age >=18 )
+print(age >=26 or age >=26 and has_id)
+print(age >=18 and not has_id)
+
+
