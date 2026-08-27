@@ -114,13 +114,37 @@
 
 #logical operators(using and, or, not)
 
-age = 25
-has_id = False
+# age = 25
+# has_id = False
 
-print(age >=18 and has_id)
-print(age >=18 )
-print(age >=26 or age >=26 and has_id)
-print(age >=18 and not has_id)
+# print(age >=18 and has_id)
+# print(age >=18 )
+# print(age >=26 or age >=26 and has_id)
+# print(age >=18 and not has_id)
 
-print(bool(input("Enter your name:   ") or input("Enter your name:   ")))
+# print(bool(input("Enter your name:   ") or input("Enter your name:   ")))
+
+# print(bool({}))
+# print(bool([]))
+# print(bool(()))
+# print(bool(set()))
+# print(bool(None))
+# print(bool(""))
+# print(bool(0)) 
+# print(bool(0.0))    
+# print(bool(0j)) 
+# print(bool(False))
+# print(bool(range(0)))
+
+# name = input("Enter your name:  ")
+# getting = name or "anonymous"
+# print(f"Hello {getting}")
+
+name = input("Enter your name:  ")
+age = int(input("Enter your age:  "))
+name1 = input("Enter your name:  ")
+
+print(f"i am {name} and i love you soo {name1} and my age is {age}")
+
+
 
