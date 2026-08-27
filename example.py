@@ -122,4 +122,5 @@ print(age >=18 )
 print(age >=26 or age >=26 and has_id)
 print(age >=18 and not has_id)
 
+print(bool(input("Enter your name:   ") or input("Enter your name:   ")))
 
