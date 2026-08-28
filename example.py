@@ -166,6 +166,41 @@
 # print( 10 <= 10)
 
 # print(10 == 10)
-print("shannu" is "alita")
+# print("shannu" is "alita")
+
+# if False:
+#     print("i am good")
+#     print("i am fine")
+# print("i am not good")
+
+# result calculator
+# score = int(input("Enter your score:  "))
+
+# if score >= 90:
+#     print(f"your score is {score} and your grade is A")
+# elif score >= 80:
+#     print(f"your score is {score} and your grade is B")
+# elif score >= 70:
+#     print(f"your score is {score} and your grade is C")
+# elif score >= 60:
+#     print(f"your score is {score} and your grade is D") 
+# else:
+#     print(f"your score is : {score} , you are fail")
+
+#nested if condition
+
+age = int(input("enter your age:  "))
+if age >= 18:
+    print("you are go to next cheking process")
+
+    has_id = input("do u have an id card (yes/no):  ")
+    if has_id == "yes":
+        print("you can go to office")
+    else:
+        print("you are not allowed")
+else:
+    print("you are under age")
 
 
+
+        
