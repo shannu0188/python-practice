@@ -140,11 +140,32 @@
 # getting = name or "anonymous"
 # print(f"Hello {getting}")
 
-name = input("Enter your name:  ")
-age = int(input("Enter your age:  "))
-name1 = input("Enter your name:  ")
+# name = input("Enter your name:  ")
+# age = int(input("Enter your age:  "))
+# name1 = input("Enter your name:  ")
 
-print(f"i am {name} and i love you soo {name1} and my age is {age}")
+# print(f"i am {name} and i love you soo {name1} and my age is {age}")
 
+# result = "yes"
+# yes = "NO"
+# print(type(result))
+# print(bool(result))
+# print(result is yes)
+
+# print("p" in "python")
+# print("java" in "python")
+# print("p" not in "python")
+# print("java" not in "python")
+
+# print( (3 + 5) * 3)
+# print( 10 == 10)
+# print( 5 != 10)
+# print( 10 > 10)
+# print( 10 < 10) 
+# print( 10 >= 10)
+# print( 10 <= 10)
+
+# print(10 == 10)
+print("shannu" is "alita")
 
 
