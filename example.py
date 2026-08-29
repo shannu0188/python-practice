@@ -225,16 +225,32 @@
 #     else:
 #         print("Login successful")
 
-username = input("Enter your username: ")
-password = input("Enter your password: ")
+# username = input("Enter your username: ")
+# password = input("Enter your password: ")
 
-if not username:
-    print("Username can't be empty")
-elif not password:
-    print("Password can't be empty")
-elif username != "admin":
-    print("Unknown user")
-elif password != "password123":
-    print("Incorrect password")
+# if not username:
+#     print("Username can't be empty")
+# elif not password:
+#     print("Password can't be empty")
+# elif username != "admin":
+#     print("Unknown user")
+# elif password != "password123":
+#     print("Incorrect password")
+# else:
+#     print("Login successful")
+
+# ATM withdrawal
+
+balance = 1000
+pin = input("Enter your PIN: ")
+if pin != "1234":
+    print("Incorrect PIN")
 else:
-    print("Login successful")
+    amount = float(input("Enter the amount to withdraw: "))
+    if amount <= 0:
+        print("Invalid amount")
+    elif amount > balance:
+        print("Insufficient funds")
+    else:
+        balance -= amount
+        print(f"Withdrawal successful. New balance: {balance:.2f}")
