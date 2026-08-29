@@ -209,18 +209,32 @@
 
 
 #login
+# username = input("Enter your username: ")
+
+# if not username:
+#     print("Username can't be empty")
+
+# elif username == "admin":
+#     print("Unknown user")
+
+# else:
+#     password = input("Enter your password: ")
+
+#     if not password:
+#         print("Password can't be empty")
+#     else:
+#         print("Login successful")
+
 username = input("Enter your username: ")
+password = input("Enter your password: ")
 
 if not username:
     print("Username can't be empty")
-
-elif username == "admin":
+elif not password:
+    print("Password can't be empty")
+elif username != "admin":
     print("Unknown user")
-
+elif password != "password123":
+    print("Incorrect password")
 else:
-    password = input("Enter your password: ")
-
-    if not password:
-        print("Password can't be empty")
-    else:
-        print("Login successful")
+    print("Login successful")
