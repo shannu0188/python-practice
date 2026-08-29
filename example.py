@@ -189,18 +189,38 @@
 
 #nested if condition
 
-age = int(input("enter your age:  "))
-if age >= 18:
-    print("you are go to next cheking process")
+# age = int(input("enter your age:  "))
+# if age >= 18:
+#    print("you are go to next cheking process")
 
-    has_id = input("do u have an id card (yes/no):  ")
-    if has_id == "yes":
-        print("you can go to office")
-    else:
-        print("you are not allowed")
+#    has_id = input("do u have an id card (yes/no):  ")
+#    if has_id == "yes":
+#         print("you can go to office")
+#    else:
+#       print("you are not allowed")
+
+# else:
+#    print("you are under age")
+
+# age = 18
+# has_id = True
+# if age >= 18 and has_id:
+#     print("u can go")
+
+
+#login
+username = input("Enter your username: ")
+
+if not username:
+    print("Username can't be empty")
+
+elif username == "admin":
+    print("Unknown user")
+
 else:
-    print("you are under age")
+    password = input("Enter your password: ")
 
-
-
-        
+    if not password:
+        print("Password can't be empty")
+    else:
+        print("Login successful")
