@@ -241,16 +241,48 @@
 
 # ATM withdrawal
 
-balance = 1000
-pin = input("Enter your PIN: ")
-if pin != "1234":
-    print("Incorrect PIN")
-else:
-    amount = float(input("Enter the amount to withdraw: "))
-    if amount <= 0:
-        print("Invalid amount")
-    elif amount > balance:
-        print("Insufficient funds")
-    else:
-        balance -= amount
-        print(f"Withdrawal successful. New balance: {balance:.2f}")
+# balance = 1000
+# pin = input("Enter your PIN: ")
+# if pin != "1234":
+#     print("Incorrect PIN")
+# else:
+#     amount = float(input("Enter the amount to withdraw: "))
+#     if amount <= 0:
+#         print("Invalid amount")
+#     elif amount > balance:
+#         print("Insufficient funds")
+#     else:
+#         balance -= amount
+#         print(f"Withdrawal successful. New balance: {balance:.2f}")
+
+
+
+
+# age = 18
+# if age >= 18:
+#     pass
+# else:
+#     print("You are underage")
+
+
+# name = input("Enter your name: ")
+# name = "shannu"
+# from os import name
+
+# name = "shannu"
+# if name:
+#     print(f"Hello {name}")
+
+# if name != "shannu":
+#     print(f"Hello {name}")
+# else:
+#     print("sorry shannu")
+
+# turnary operator
+# age =25
+# status = "adult" if age >=18 else "minor" 
+# print(status)
+
+x = int(input("enter no:  "))
+result = "even" if x % 2 == 0 else "odd"
+print(result)
