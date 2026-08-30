@@ -308,14 +308,24 @@
 #         print("unknown command")
 
 
-day = input("Enter day: ")
+# day = input("Enter day: ")
 
-match day:
-    case "sunday" | "saturday":
-        print("weekend")
+# match day:
+#     case "sunday" | "saturday":
+#         print("weekend")
 
-    case "monday" | "tuesday" | "thursday":
-        print("week days")
+#     case "monday" | "tuesday" | "thursday":
+#         print("week days")
+
+age = int(input("enter your age:  "))
+match age:
+    case n if n < 18:
+        print("under age")
+    case n if n >= 18:
+        print("adult")
+
+    
+
 
     
 
