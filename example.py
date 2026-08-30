@@ -295,17 +295,36 @@
 #     count += 1
 
 # match(switch case)
-command = input("enter the command:  ")
+# command = input("enter the command:  ")
 
-match command:
-    case "start":
-        print("starting....")
-    case "stop":
-        print("stoping...")
-    case "restart":
-        print("restarting...")
-    case _:
-        print("unknown command")
+# match command:
+#     case "start":
+#         print("starting....")
+#     case "stop":
+#         print("stoping...")
+#     case "restart":
+#         print("restarting...")
+#     case _:
+#         print("unknown command")
+
+
+day = input("Enter day: ")
+
+match day:
+    case "sunday" | "saturday":
+        print("weekend")
+
+    case "monday" | "tuesday" | "thursday":
+        print("week days")
+
+    
+
+
+
+
+
+
+
 
 
 
