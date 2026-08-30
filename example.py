@@ -287,10 +287,27 @@
 # result = "even" if x % 2 == 0 else "odd"
 # print(result)
 
+
 #while loop
-count = 0
-while count <5:
-    print(count)
-    count += 1
+# count = 0
+# while count <5:
+#     print(count)
+#     count += 1
+
+# match(switch case)
+command = input("enter the command:  ")
+
+match command:
+    case "start":
+        print("starting....")
+    case "stop":
+        print("stoping...")
+    case "restart":
+        print("restarting...")
+    case _:
+        print("unknown command")
+
+
+
 
     
