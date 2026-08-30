@@ -283,6 +283,14 @@
 # status = "adult" if age >=18 else "minor" 
 # print(status)
 
-x = int(input("enter no:  "))
-result = "even" if x % 2 == 0 else "odd"
-print(result)
+# x = int(input("enter no:  "))
+# result = "even" if x % 2 == 0 else "odd"
+# print(result)
+
+#while loop
+count = 0
+while count <5:
+    print(count)
+    count += 1
+
+    
