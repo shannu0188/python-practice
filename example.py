@@ -327,17 +327,25 @@
 
 #while loop
 
-count = 0
-while count <=5:
-    print(count)
-    count += 1
-print("done")
+# count = 0
+# while count <=5:
+#     print(count)
+#     count += 1
+# print("done")
 
+# i = 0
+# while i < 5:
+#     print(i)
+#     i +=1
 
-    
+# for i in range(5):
+#     print(i)
 
+user_input = input("command:  ")
 
-
+while user_input != "quit":
+    print (f"processing: {user_input}")
+    user_input = input("command: ")
 
 
 
