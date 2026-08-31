@@ -317,14 +317,21 @@
 #     case "monday" | "tuesday" | "thursday":
 #         print("week days")
 
-age = int(input("enter your age:  "))
-match age:
-    case n if n < 18:
-        print("under age")
-    case n if n >= 18:
-        print("adult")
+# age = int(input("enter your age:  "))
+# match age:
+#     case n if n < 18:
+#         print("under age")
+#     case n if n >= 18:
+#         print("adult")
 
-    
+
+#while loop
+
+count = 0
+while count <=5:
+    print(count)
+    count += 1
+print("done")
 
 
     
