@@ -347,16 +347,29 @@
 #     print (f"processing: {user_input}")
 #     user_input = input("command: ")
 
-while True:
-    command = input(" Enter the command (quit or exit): ").strip().lower()
-    if command =="quit":
-        print("Good bye!")
-        break
-    print(f"you are enterd: {command}")
+# while True:
+#     command = input(" Enter the command (quit or exit): ").strip().lower()
+#     if command =="quit":
+#         print("Good bye!")
+#         break
+#     print(f"you are enterd: {command}")
 
+count = 0
+# while count < 100:
+#     if count == 5:
+#         print(" Reached 5 stopping erly")
+#         break
+#     print(count)
+#     count +=1
 
+count = 0
+while count < 15:
+    count += 1
+    if count % 2 == 0:
+        continue
+    print(count)
 
-
+    
 
 
 
