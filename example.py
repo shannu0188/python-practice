@@ -341,11 +341,18 @@
 # for i in range(5):
 #     print(i)
 
-user_input = input("command:  ")
+# user_input = input("command:  ")
 
-while user_input != "quit":
-    print (f"processing: {user_input}")
-    user_input = input("command: ")
+# while user_input != "quit":
+#     print (f"processing: {user_input}")
+#     user_input = input("command: ")
+
+while True:
+    command = input(" Enter the command (quit or exit): ").strip().lower()
+    if command =="quit":
+        print("Good bye!")
+        break
+    print(f"you are enterd: {command}")
 
 
 
