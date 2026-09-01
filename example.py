@@ -390,7 +390,7 @@ count = 0
 #     print(number)
 # print("png finsh")
 
-target = 5
+target = 120
 guess = 0
 while guess < 5:
     attempt = int(input("gess the number:  "))
