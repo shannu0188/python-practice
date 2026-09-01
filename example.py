@@ -376,16 +376,28 @@ count = 0
 #         continue
 #     print(count)
 
-while True:
-    user_input = input("enter a number:  (or 'done' to finish):  ").lower().strip()
-    if user_input.lower() == "done":
-        break
+# while True:
+#     user_input = input("enter a number:  (or 'done' to finish):  ").lower().strip()
+#     if user_input.lower() == "done":
+#         break
      
-    if not user_input.isdigit():
-        print("enter a vaild number")
-        continue
+#     if not user_input.isdigit():
+#         print("enter a vaild number")
+#         continue
 
 
-    number = int(user_input)
-    print(number)
-print("png finsh")
+#     number = int(user_input)
+#     print(number)
+# print("png finsh")
+
+target = 5
+guess = 0
+while guess < 5:
+    attempt = int(input("gess the number:  "))
+    guess +=1
+    if attempt == target:
+        print("ur right")
+        break
+
+else:
+    print("ur out of attempt")
