@@ -390,14 +390,24 @@ count = 0
 #     print(number)
 # print("png finsh")
 
-target = 120
-guess = 0
-while guess < 5:
-    attempt = int(input("gess the number:  "))
-    guess +=1
-    if attempt == target:
-        print("ur right")
-        break
+# target = 120
+# guess = 0
+# while guess < 5:
+#     attempt = int(input("gess the number:  "))
+#     guess +=1
+#     if attempt == target:
+#         print("ur right")
+#         break
 
-else:
-    print("ur out of attempt")
+# else:
+#     print("ur out of attempt")
+
+# using for loop
+# for i in range(5):
+#     print(i)
+
+for i in iter(int, 1):
+    line = (input("enter somthing (done or quit): "))
+    if line == "quit":
+        print(f"ur are entred:  {line}")
+        break
