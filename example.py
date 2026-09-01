@@ -369,12 +369,23 @@ count = 0
 #         continue
 #     print(count)
 
-count = 0
-while count <10:
-    count +=1
-    if count %2 == 0:
+# count = 0
+# while count <10:
+#     count +=1
+#     if count %2 == 0:
+#         continue
+#     print(count)
+
+while True:
+    user_input = input("enter a number:  (or 'done' to finish):  ").lower().strip()
+    if user_input.lower() == "done":
+        break
+     
+    if not user_input.isdigit():
+        print("enter a vaild number")
         continue
-    print(count)
 
 
-    
+    number = int(user_input)
+    print(number)
+print("png finsh")
