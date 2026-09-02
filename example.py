@@ -406,8 +406,35 @@ count = 0
 # for i in range(5):
 #     print(i)
 
-for i in iter(int, 1):
-    line = (input("enter somthing (done or quit): "))
-    if line == "quit":
-        print(f"ur are entred:  {line}")
-        break
+# for i in iter(int, 1):
+#     line = (input("enter somthing (done or quit): "))
+#     if line == "quit":
+#         print(f"ur are entred:  {line}")
+#         break
+
+# for i in range(0, 15, 2):
+#     print(i)
+
+# for i in range(15, 0, -1):
+#     print(i)
+
+# for char in ("python"):
+#     print(char)
+
+# text = "python"
+# for i in range(len(text)):
+#     print(i, text[i])
+
+text = input("Enter a sentence: ")
+
+vowel_count = 0
+consonant_count = 0
+
+for char in text.lower():
+    if char in "aeiou":
+        vowel_count += 1
+    elif char.isalpha():
+        consonant_count += 1
+
+print(f"Vowels: {vowel_count}")
+print(f"Consonants: {consonant_count}")
