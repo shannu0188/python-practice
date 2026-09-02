@@ -463,9 +463,16 @@ count = 0
 # else:
 #     print(f" {target} not found {text}")
 
-for i in range(1, 4):
-    for j in range(1, 4):
-        print(f"{i} x {j} = {i * j} ")
-    print("="  * 10)
+# for i in range(1, 4):
+#     for j in range(1, 11):
+#         print(f"{i} x {j} = {i * j} ")
+#     print("="  * 10)
 
+
+for i in range(1, 10):
+    print("*" * i)
+
+
+
+    
 
