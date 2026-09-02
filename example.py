@@ -447,7 +447,25 @@ count = 0
 #     print(i)
 
 
-for i in range(10):
-    if i % 3 == 0:
-        continue
-    print(i)
+# for i in range(10):
+#     if i % 3 == 0:
+#         continue
+#     print(i)
+
+# target ="p"
+# text = "python"
+
+# for char in text:
+#     if char == target:
+#         print(f"found {target} in {text}")
+#         break
+
+# else:
+#     print(f" {target} not found {text}")
+
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(f"{i} x {j} = {i * j} ")
+    print("="  * 10)
+
+
