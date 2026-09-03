@@ -474,15 +474,26 @@ count = 0
 
 # today we can practice list data types(03/09/2026)
 
-name = ["shannu", "kaveri", "paapu"]
-vegitables = ["tomoto", "onion", "patato"]
-D_mart =["rice", "dal", "sugar"]
-mixed = [143, "muddumma", 143.2, True]
-print(name)
-print(vegitables)
-print(D_mart)
-print(mixed)
+# name = ["shannu", "kaveri", "paapu"]
+# vegitables = ["tomoto", "onion", "patato"]
+# D_mart =["rice", "dal", "sugar"]
+# mixed = [143, "muddumma", 143.2, True]
+# print(name)
+# print(vegitables)
+# print(D_mart)
+# print(mixed)
 
 
-    
+# D_mart =["rice", "dal", "sugar"]
+# for item in D_mart:
+#     print(item)
+# print(len(D_mart))
+
+aisle_num = list(range(1, 6))
+print(aisle_num)
+empty = []
+print(empty)
+d_mart = list("DMART")
+print(d_mart)
+
 
