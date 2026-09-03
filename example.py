@@ -489,11 +489,18 @@ count = 0
 #     print(item)
 # print(len(D_mart))
 
-aisle_num = list(range(1, 6))
-print(aisle_num)
-empty = []
-print(empty)
-d_mart = list("DMART")
-print(d_mart)
+# aisle_num = list(range(1, 6))
+# print(aisle_num)
+# empty = []
+# print(empty)
+# d_mart = list("DMART")
+# print(d_mart)
+
+vegitables = ["tomoto", "onion", "patato", "carrot", "beens"]
+first = vegitables[0]
+second = vegitables[1]
+last = vegitables[-1]
+second_last = vegitables[-2]
+print(f"this is the indexing \n {first}\n {second}\n {last}\n {second_last}")
 
 
