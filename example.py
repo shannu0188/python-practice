@@ -469,9 +469,19 @@ count = 0
 #     print("="  * 10)
 
 
-for i in range(1, 10):
-    print("*" * i)
+# for i in range(1, 10):
+#     print("*" * i)
 
+# today we can practice list data types(03/09/2026)
+
+name = ["shannu", "kaveri", "paapu"]
+vegitables = ["tomoto", "onion", "patato"]
+D_mart =["rice", "dal", "sugar"]
+mixed = [143, "muddumma", 143.2, True]
+print(name)
+print(vegitables)
+print(D_mart)
+print(mixed)
 
 
     
