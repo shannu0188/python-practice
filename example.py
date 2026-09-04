@@ -563,14 +563,24 @@ count = 0
 # has3 = "solt" not in my_cart
 # print(has3)
 
-prices =[]
-for i  in range(3):
-    p =int(input(f"price {i+1}:  ₹ "))
-    print(prices)
-    prices.append(p)
-total = sum(prices)
-avg = total / len(prices)
+# prices =[]
+# for i  in range(3):
+#     p =int(input(f"price {i+1}:  ₹ "))
+#     print(prices)
+#     prices.append(p)
+# total = sum(prices)
+# avg = total / len(prices)
 
-print(f"total : {total}")
-print(f"avg : {avg}")
-print(f"in the price list {prices}")
+# print(f"total : {total}")
+# print(f"avg : {avg}")
+# print(f"in the price list {prices}")
+
+cart = [
+    ["dal", "rice", "bele"],
+    ["oil", "ghee", "butter"],
+    ["soap", "shampoo","diterjent"],
+]
+print (cart[0][2])
+print (cart[1][1])
+print (cart[2][1])
+      
