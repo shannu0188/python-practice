@@ -504,11 +504,18 @@ count = 0
 # print(f"this is the indexing \n {first}\n {second}\n {last}\n {second_last}")
 
 
-price = [10, 20, 30, 70, 80, 50]
-first = price[0:3]
-mid_range = price[2:5]
-avg = price[:5]
-mid_avg = price[::-2]
+# price = [10, 20, 30, 70, 80, 50]
+# first = price[0:3]
+# mid_range = price[2:5]
+# avg = price[:5]
+# mid_avg = price[::-2]
 
-print(f"slicing \n {first} \n {mid_range} \n {avg} \n {mid_avg} \n")
+# print(f"slicing \n {first} \n {mid_range} \n {avg} \n {mid_avg} \n")
 
+# list is mutable how to see 
+veg = ["tomoto", "onion", "patato", "carrot", "beens"]
+first = veg[2]
+print(first)
+veg[2] = "cabbage"
+
+print (veg)
