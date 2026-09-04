@@ -536,14 +536,41 @@ count = 0
 # print(f"My friend cart ={frd_cart}")
 
 
-cart = ["rice", "dal", "ghee", "apple"]
-print(cart)
-cart.insert(0, "sugar")
-print(cart)
+# cart = ["rice", "dal", "ghee", "apple"]
+# print(cart)
+# cart.insert(0, "sugar")
+# print(cart)
 
-cart.pop()
-print(cart)
+# cart.pop()
+# print(cart)
 
-cart.remove("rice")
-print(cart)
+# cart.remove("rice")
+# print(cart)
 
+# my_cart = ["rice", "dal", "ghee", "apple"]
+# for cart in my_cart:
+#     print(cart)
+# print(my_cart)
+
+# my_cart = ["rice", "dal", "ghee", "apple"]
+
+# has = "dal" in my_cart
+# print(has)
+
+# has2 = "solt" in my_cart
+# print(has2)
+
+# has3 = "solt" not in my_cart
+# print(has3)
+
+prices =[]
+for i  in range(3):
+    p =int(input(f"price {i+1}:  ₹ "))
+    print(prices)
+    prices.append(p)
+total = sum(prices)
+avg = total / len(prices)
+
+print(f"total : {total}")
+print(f"avg : {avg}")
+print(f"in the price list {prices}")
