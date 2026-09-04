@@ -513,9 +513,26 @@ count = 0
 # print(f"slicing \n {first} \n {mid_range} \n {avg} \n {mid_avg} \n")
 
 # list is mutable how to see 
-veg = ["tomoto", "onion", "patato", "carrot", "beens"]
-first = veg[2]
-print(first)
-veg[2] = "cabbage"
+# veg = ["tomoto", "onion", "patato", "carrot", "beens"]
+# first = veg[2]
+# print(first)
+# veg[2] = "cabbage"
 
-print (veg)
+# print (veg)
+
+#  share cart 
+# my_cart = ["rice", "dal", "sugar"]
+# wife_cart = my_cart
+# wife_cart.append("solt")
+# my_cart.append("ghee")
+# print(my_cart)
+# print(wife_cart)
+
+# me and my friend cart
+my_cart = ["rice", "dal", "sugar"]
+frd_cart = my_cart.copy()
+frd_cart.append("apple")
+print(f"this is my cart = {my_cart} ")
+print(f"My friend cart ={frd_cart}")
+
+
