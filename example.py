@@ -529,10 +529,21 @@ count = 0
 # print(wife_cart)
 
 # me and my friend cart
-my_cart = ["rice", "dal", "sugar"]
-frd_cart = my_cart.copy()
-frd_cart.append("apple")
-print(f"this is my cart = {my_cart} ")
-print(f"My friend cart ={frd_cart}")
+# my_cart = ["rice", "dal", "sugar"]
+# frd_cart = my_cart.copy()
+# frd_cart.append("apple")
+# print(f"this is my cart = {my_cart} ")
+# print(f"My friend cart ={frd_cart}")
 
+
+cart = ["rice", "dal", "ghee", "apple"]
+print(cart)
+cart.insert(0, "sugar")
+print(cart)
+
+cart.pop()
+print(cart)
+
+cart.remove("rice")
+print(cart)
 
