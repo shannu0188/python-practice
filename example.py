@@ -591,16 +591,36 @@ count = 0
 # print(alise)
 
 #  check empty list
-cart = []
-if cart:
-    print(" has items")
-else:
-    print("has no items")
+# cart = []
+# if cart:
+#     print(" has items")
+# else:
+#     print("has no items")
 
-cart.append("rice")
-cart.append("dal")
-if cart:
-    print(cart)
-    print(len(cart))
-else:
-    print("no items")
+# cart.append("rice")
+# cart.append("dal")
+# if cart:
+#     print(cart)
+#     print(len(cart))
+# else:
+#     print("no items")
+
+#  sum min max in a list
+prices = [10, 20, 40, 70, 30, 80, 55]
+# low = sum(prices)
+# mid = min(prices)
+# avg = max(prices)
+
+# print(f"to check {low}\n {mid}\n {avg}")
+# print(len(prices))
+
+# 
+max = []
+for p in prices:
+    if p > 50:
+        max.append(p)
+print(max)
+print(len(max))
+
+
+
