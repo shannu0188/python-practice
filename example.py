@@ -575,12 +575,17 @@ count = 0
 # print(f"avg : {avg}")
 # print(f"in the price list {prices}")
 
-cart = [
-    ["dal", "rice", "bele"],
-    ["oil", "ghee", "butter"],
-    ["soap", "shampoo","diterjent"],
-]
-print (cart[0][2])
-print (cart[1][1])
-print (cart[2][1])
-      
+# cart = [
+#     ["dal", "rice", "bele"],
+#     ["oil", "ghee", "butter"],
+#     ["soap", "shampoo","diterjent"],
+# ]
+# print (cart[0][2])
+# print (cart[1][1])
+# print (cart[2][1])
+
+my_cart = ["rice", "dal", "ghee", "apple"]    
+letters = list("Dmart")
+alise = list(range(1, 10))
+print(letters)
+print(alise)
