@@ -606,7 +606,7 @@ count = 0
 #     print("no items")
 
 #  sum min max in a list
-prices = [10, 20, 40, 70, 30, 80, 55]
+# prices = [10, 20, 40, 70, 30, 80, 55]
 # low = sum(prices)
 # mid = min(prices)
 # avg = max(prices)
@@ -614,13 +614,23 @@ prices = [10, 20, 40, 70, 30, 80, 55]
 # print(f"to check {low}\n {mid}\n {avg}")
 # print(len(prices))
 
-# 
-max = []
-for p in prices:
-    if p > 50:
-        max.append(p)
-print(max)
-print(len(max))
+# list in a loop
+# max = []
+# for p in prices:
+#     if p > 50:
+#         max.append(p)
+# print(max)
+# print(len(max))
 
+# nested list
+veg = ["carrot", "beens", "onion"]
+fruts = ["apple","orange", "graps"]
+dinasi = ["dal", "rice", "oil"]
 
+cart = [veg, fruts, dinasi]
+print(cart)
+first = cart[0]
+print(first)
+sec = cart[1][1]
+print(sec)
 
