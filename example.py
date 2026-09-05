@@ -584,8 +584,23 @@ count = 0
 # print (cart[1][1])
 # print (cart[2][1])
 
-my_cart = ["rice", "dal", "ghee", "apple"]    
-letters = list("Dmart")
-alise = list(range(1, 10))
-print(letters)
-print(alise)
+# my_cart = ["rice", "dal", "ghee", "apple"]    
+# letters = list("Dmart")
+# alise = list(range(1, 10))
+# print(letters)
+# print(alise)
+
+#  check empty list
+cart = []
+if cart:
+    print(" has items")
+else:
+    print("has no items")
+
+cart.append("rice")
+cart.append("dal")
+if cart:
+    print(cart)
+    print(len(cart))
+else:
+    print("no items")
