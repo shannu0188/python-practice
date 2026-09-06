@@ -623,14 +623,42 @@ count = 0
 # print(len(max))
 
 # nested list
-veg = ["carrot", "beens", "onion"]
-fruts = ["apple","orange", "graps"]
-dinasi = ["dal", "rice", "oil"]
+# veg = ["carrot", "beens", "onion"]
+# fruts = ["apple","orange", "graps"]
+# dinasi = ["dal", "rice", "oil"]
 
-cart = [veg, fruts, dinasi]
-print(cart)
-first = cart[0]
-print(first)
-sec = cart[1][1]
-print(sec)
+# cart = [veg, fruts, dinasi]
+# print(cart)
+# first = cart[0]
+# print(first)
+# sec = cart[1][1]
+# print(sec)
 
+# veg = ["carrot", "beens", "onion"]
+# fruts = ["apple","orange", "graps"]
+# dinasi = ["dal", "rice", "oil"]
+
+# cart = [veg, fruts, dinasi]
+# print(cart)
+# first = cart[0]
+# print(first)
+# sec = cart[1][1]
+# print(sec)
+
+# students = [
+#     ["Rahul", 85, 90],
+#     ["Kiran", 78, 88],
+#     ["Arun", 92, 95]
+# ]
+
+# print(students[0])
+# print(students[0][1])
+
+cart = [
+    ["Laptop", 50000],
+    ["Mouse", 800],
+    ["Keyboard", 1500]
+]
+
+print(cart[1][0])
+print(cart[1][1])
