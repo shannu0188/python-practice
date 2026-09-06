@@ -663,10 +663,27 @@ count = 0
 # print(cart[1][0])
 # print(cart[1][1])
 
-marks = [85, 72, 90, 65]
+# marks = [85, 72, 90, 65]
 
-for mark in marks:
-    if mark >= 75:
-        print(mark, "→ Good")
-    else:
-        print(mark, "→ Need improvement")
+# for mark in marks:
+#     if mark >= 75:
+#         print(mark, "→ Good")
+#     else:
+#         print(mark, "→ Need improvement")
+
+products = ["laptop", "mouse", "keyboard", "phone"]
+prices = [50000, 800, 1500, 20000]
+
+# List access using index
+print("First product:", products[0])
+
+# Add a new product
+products.append("headphone")
+
+# Insert a product
+products.insert(1, "tablet")
+
+# Copy the list
+new_products = products.copy()
+
+# Loop through products
