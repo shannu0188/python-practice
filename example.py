@@ -654,11 +654,19 @@ count = 0
 # print(students[0])
 # print(students[0][1])
 
-cart = [
-    ["Laptop", 50000],
-    ["Mouse", 800],
-    ["Keyboard", 1500]
-]
+# cart = [
+#     ["Laptop", 50000],
+#     ["Mouse", 800],
+#     ["Keyboard", 1500]
+# ]
 
-print(cart[1][0])
-print(cart[1][1])
+# print(cart[1][0])
+# print(cart[1][1])
+
+marks = [85, 72, 90, 65]
+
+for mark in marks:
+    if mark >= 75:
+        print(mark, "→ Good")
+    else:
+        print(mark, "→ Need improvement")
