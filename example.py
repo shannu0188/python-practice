@@ -704,3 +704,4 @@ Dunder method
 iterator 
 itaration
 genarative method
+chip manufacturing concept
