@@ -701,3 +701,5 @@ new_products = products.copy()
 # print("All products:", products)
 today i have learn some concept
 Dunder method
+iterator 
+itaration
