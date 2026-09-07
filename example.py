@@ -687,15 +687,17 @@ products.insert(1, "tablet")
 new_products = products.copy()
 
 # Loop through products
-for product in products:
+# for product in products:
 
-    if product == "laptop":
-        print(product, "→ Expensive")
+#     if product == "laptop":
+#         print(product, "→ Expensive")
 
-    elif product == "phone":
-        print(product, "→ Medium price")
+#     elif product == "phone":
+#         print(product, "→ Medium price")
 
-    else:
-        print(product, "→ Normal product")
+#     else:
+#         print(product, "→ Normal product")
 
-print("All products:", products)
+# print("All products:", products)
+today i have learn some concept
+Dunder method
