@@ -709,3 +709,4 @@ today i have learn some concept
 functions
 oops concept
 comparissions 
+loops in short cut way
