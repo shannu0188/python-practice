@@ -707,3 +707,5 @@ new_products = products.copy()
 # chip manufacturing concept
 today i have learn some concept
 functions
+oops concept
+comparissions 
