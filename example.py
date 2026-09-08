@@ -699,9 +699,11 @@ new_products = products.copy()
 #         print(product, "→ Normal product")
 
 # print("All products:", products)
+# today i have learn some concept
+# Dunder method
+# iterator 
+# itaration
+# genarative method
+# chip manufacturing concept
 today i have learn some concept
-Dunder method
-iterator 
-itaration
-genarative method
-chip manufacturing concept
+functions
