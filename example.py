@@ -741,17 +741,33 @@ new_products = products.copy()
 # account = Bank()
 # account.show_balance()
 
-class Animal:
-    def eat(self):
-        print("Animal is eating")
+# class Animal:
+#     def eat(self):
+#         print("Animal is eating")
 
 
-class Dog(Animal):
-    def bark(self):
-        print("Dog is barking")
+# class Dog(Animal):
+#     def bark(self):
+#         print("Dog is barking")
 
 
-dog1 = Dog()
+# dog1 = Dog()
 
-dog1.eat()
-dog1.bark()
+# dog1.eat()
+# dog1.bark()
+
+class Dog:
+    def sound(self):
+        print("Dog says Woof")
+
+
+class Cat:
+    def sound(self):
+        print("Cat says Meow")
+
+
+dog = Dog()
+cat = Cat()
+
+dog.sound()
+cat.sound()
