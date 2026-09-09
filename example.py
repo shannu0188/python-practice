@@ -711,10 +711,21 @@ new_products = products.copy()
 # comparissions 
 # loops in short cut way
 
+# class Student:
+#     def study(self):
+#         print("Student is studying")
+
+
+# student1 = Student()
+# student1.study()
+
 class Student:
-    def study(self):
-        print("Student is studying")
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print("Student:", self.name)
 
 
-student1 = Student()
-student1.study()
+student1 = Student("Shannu")
+student1.display()
