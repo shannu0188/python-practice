@@ -730,13 +730,28 @@ new_products = products.copy()
 # student1 = Student("Shannu")
 # student1.display()
 
-class Bank:
-    def __init__(self):
-        self.__balance = 5000
+# class Bank:
+#     def __init__(self):
+#         self.__balance = 5000
 
-    def show_balance(self):
-        print("Balance:", self.__balance)
+#     def show_balance(self):
+#         print("Balance:", self.__balance)
 
 
-account = Bank()
-account.show_balance()
+# account = Bank()
+# account.show_balance()
+
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog is barking")
+
+
+dog1 = Dog()
+
+dog1.eat()
+dog1.bark()
