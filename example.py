@@ -705,8 +705,16 @@ new_products = products.copy()
 # itaration
 # genarative method
 # chip manufacturing concept
-today i have learn some concept
-functions
-oops concept
-comparissions 
-loops in short cut way
+# today i have learn some concept
+# functions
+# oops concept
+# comparissions 
+# loops in short cut way
+
+class Student:
+    def study(self):
+        print("Student is studying")
+
+
+student1 = Student()
+student1.study()
