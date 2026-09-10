@@ -738,11 +738,4 @@ new_products = products.copy()
 #         print("Balance:", self.__balance)
 
 
-# account = Bank()
-# account.show_balance()
-
-# class Animal:
-#     def eat(self):
-#         print("Animal is eating")
-
 
