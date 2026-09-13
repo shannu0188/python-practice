@@ -645,60 +645,7 @@ count = 0
 # sec = cart[1][1]
 # print(sec)
 
-# students = [
-#     ["Rahul", 85, 90],
-#     ["Kiran", 78, 88],
-#     ["Arun", 92, 95]
-# ]
 
-# print(students[0])
-# print(students[0][1])
-
-# cart = [
-#     ["Laptop", 50000],
-#     ["Mouse", 800],
-#     ["Keyboard", 1500]
-# ]
-
-# print(cart[1][0])
-# print(cart[1][1])
-
-# marks = [85, 72, 90, 65]
-
-# for mark in marks:
-#     if mark >= 75:
-#         print(mark, "→ Good")
-#     else:
-#         print(mark, "→ Need improvement")
-
-products = ["laptop", "mouse", "keyboard", "phone"]
-prices = [50000, 800, 1500, 20000]
-
-# List access using index
-print("First product:", products[0])
-
-# Add a new product
-products.append("headphone")
-
-# Insert a product
-products.insert(1, "tablet")
-
-# Copy the list
-new_products = products.copy()
-
-# Loop through products
-# for product in products:
-
-#     if product == "laptop":
-#         print(product, "→ Expensive")
-
-#     elif product == "phone":
-#         print(product, "→ Medium price")
-
-#     else:
-#         print(product, "→ Normal product")
-
-# print("All products:", products)
 # today i have learn some concept
 # Dunder method
 # iterator 
@@ -711,6 +658,18 @@ new_products = products.copy()
 # comparissions 
 # loops in short cut way
 
+#13/09/2026 list in advance
+#empty list
 
+cart = []
+if cart:
+    print("list has items")
+else:
+    print("list is empty")
+
+cart.append("rice")
+if cart:
+    print("cart has item")
+    print(len(cart))
 
 
