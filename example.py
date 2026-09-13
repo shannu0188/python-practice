@@ -684,12 +684,27 @@ count = 0
 
 # sort and sorted 
 
-num = [123, 34, 55, 60, 90, 75]
-num.sort()
-print(num)
+# num = [123, 34, 55, 60, 90, 75]
+# num.sort()
+# print(num)
 
-price = sorted(num)
-print(price)
+# price = sorted(num)
+# print(price)
 
-price.sort(reverse=True)
-print(price)
+# price.sort(reverse=True)
+# print(price)
+
+# dmart = ["rice","dal", "oil"]
+# dmart.reverse()
+# print(dmart)
+# dmart = ["rice","dal", "oil"]
+# first = dmart[::-1]
+# print(first)
+
+dmart = ["rice","dal", "oil","wheet"]
+print(dmart)
+# dmart.clear()
+# print(dmart)
+
+del dmart[0:2]
+print(dmart)
