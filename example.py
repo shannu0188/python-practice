@@ -672,12 +672,24 @@ count = 0
 #     print("cart has item")
 #     print(len(cart))
 
-cart = ["rice", "oil"]
-cart.append("dal")
-print(cart)
+# cart = ["rice", "oil"]
+# cart.append("dal")
+# print(cart)
 
-cart.append(["apple", "banana"])
-print(cart)
+# cart.append(["apple", "banana"])
+# print(cart)
 
-cart.extend(["car", "van"])
-print(cart)
+# cart.extend(["car", "van"])
+# print(cart)
+
+# sort and sorted 
+
+num = [123, 34, 55, 60, 90, 75]
+num.sort()
+print(num)
+
+price = sorted(num)
+print(price)
+
+price.sort(reverse=True)
+print(price)
