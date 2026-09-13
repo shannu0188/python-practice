@@ -661,15 +661,23 @@ count = 0
 #13/09/2026 list in advance
 #empty list
 
-cart = []
-if cart:
-    print("list has items")
-else:
-    print("list is empty")
+# cart = []
+# if cart:
+#     print("list has items")
+# else:
+#     print("list is empty")
 
-cart.append("rice")
-if cart:
-    print("cart has item")
-    print(len(cart))
+# cart.append("rice")
+# if cart:
+#     print("cart has item")
+#     print(len(cart))
 
+cart = ["rice", "oil"]
+cart.append("dal")
+print(cart)
 
+cart.append(["apple", "banana"])
+print(cart)
+
+cart.extend(["car", "van"])
+print(cart)
