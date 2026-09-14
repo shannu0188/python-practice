@@ -709,6 +709,7 @@ count = 0
 # del dmart[0:2]
 # print(dmart)
 
-today learn time compexityls
+today learn time compexity
 big theta
 big omega
+space compelxity
