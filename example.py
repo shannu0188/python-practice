@@ -711,3 +711,4 @@ count = 0
 
 today learn time compexityls
 big theta
+big omega
