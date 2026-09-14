@@ -710,3 +710,4 @@ count = 0
 # print(dmart)
 
 today learn time compexityls
+big theta
