@@ -701,10 +701,12 @@ count = 0
 # first = dmart[::-1]
 # print(first)
 
-dmart = ["rice","dal", "oil","wheet"]
-print(dmart)
-# dmart.clear()
+# dmart = ["rice","dal", "oil","wheet"]
+# print(dmart)
+# # dmart.clear()
+# # print(dmart)
+
+# del dmart[0:2]
 # print(dmart)
 
-del dmart[0:2]
-print(dmart)
+today learn time compexityls
