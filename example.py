@@ -709,7 +709,19 @@ count = 0
 # del dmart[0:2]
 # print(dmart)
 
-today learn time compexity
-big theta
-big omega
-space compelxity
+# today learn time compexity
+# big theta
+# big omega
+# space compelxity
+
+def mystery(n):
+    count = 0
+
+    for i in range(n):
+        j = 1
+
+        while j < n:
+            count += 1
+            j = j * 2
+
+    return count
