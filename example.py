@@ -751,19 +751,3 @@ count = 0
 
 #     return count
 
-def mystery(n):
-    count = 0
-
-    for i in range(n):
-        j = 1
-
-        while j < n:
-            k = 1
-
-            while k < n:
-                count += 1
-                k = k * 2
-
-            j = j * 2
-
-    return count
