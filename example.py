@@ -735,19 +735,4 @@ count = 0
 
 #     return count
 
-# def mystery(n):
-#     count = 0
-
-#     i = n
-
-#     while i > 1:
-#         j = i
-
-#         while j > 1:
-#             count += 1
-#             j = j // 2
-
-#         i = i // 2
-
-#     return count
 
