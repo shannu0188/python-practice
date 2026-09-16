@@ -714,25 +714,5 @@ count = 0
 # big omega
 # space compelxity
 
-# def mystery(n):
-#     count = 0
-
-#     for i in range(n):
-#         j = 1
-
-#         while j < n:
-#             count += 1
-#             j = j * 2
-
-#     return count
-
-# def mystery(n):
-#     count = 0
-
-#     for i in range(n):
-#         for j in range(i, n):
-#             count += 1
-
-#     return count
 
 
