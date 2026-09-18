@@ -714,10 +714,5 @@ count = 0
 # big omega
 # space compelxity
 
-fruits = {"apple", "banana"}
-
-fruits.add("mango")
-
-print(fruits)
 
 
