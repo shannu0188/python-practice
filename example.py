@@ -725,3 +725,9 @@ if guess == number:
 else:
     print("❌ Wrong! The number was", number)
 
+password = input("Enter password: ")
+
+if len(password) >= 8:
+    print("Strong password")
+else:
+    print("Password is too short")
