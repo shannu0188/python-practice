@@ -731,3 +731,18 @@ if len(password) >= 8:
     print("Strong password")
 else:
     print("Password is too short")
+
+a = float(input("Enter first number: "))
+operator = input("Enter +, -, *, /: ")
+b = float(input("Enter second number: "))
+
+if operator == "+":
+    print(a + b)
+elif operator == "-":
+    print(a - b)
+elif operator == "*":
+    print(a * b)
+elif operator == "/":
+    print(a / b)
+else:
+    print("Invalid operator")
