@@ -714,35 +714,21 @@ count = 0
 # big omega
 # space compelxity
 
-import random
+# import random
 
-number = random.randint(1, 10)
+# number = random.randint(1, 10)
 
-guess = int(input("Guess the number (1-10): "))
+# guess = int(input("Guess the number (1-10): "))
 
-if guess == number:
-    print("🎉 Correct!")
-else:
-    print("❌ Wrong! The number was", number)
+# if guess == number:
+#     print("🎉 Correct!")
+# else:
+#     print("❌ Wrong! The number was", number)
 
-password = input("Enter password: ")
+# password = input("Enter password: ")
 
-if len(password) >= 8:
-    print("Strong password")
-else:
-    print("Password is too short")
+# if len(password) >= 8:
+#     print("Strong password")
+# else:
+#     print("Password is too short")
 
-a = float(input("Enter first number: "))
-operator = input("Enter +, -, *, /: ")
-b = float(input("Enter second number: "))
-
-if operator == "+":
-    print(a + b)
-elif operator == "-":
-    print(a - b)
-elif operator == "*":
-    print(a * b)
-elif operator == "/":
-    print(a / b)
-else:
-    print("Invalid operator")
