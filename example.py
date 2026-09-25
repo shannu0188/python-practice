@@ -691,27 +691,7 @@ count = 0
 # price = sorted(num)
 # print(price)
 
-# price.sort(reverse=True)
-# print(price)
-# dmart = ["rice","dal", "oil"]
-# dmart.reverse()
-# print(dmart)
-# dmart = ["rice","dal", "oil"]
-# first = dmart[::-1]
-# print(first)
 
-# dmart = ["rice","dal", "oil","wheet"]
-# print(dmart)
-# # dmart.clear()
-# # print(dmart)
-
-# del dmart[0:2]
-# print(dmart)
-
-# today learn time compexity
-# big theta
-# big omega
-# space compelxity
 
 
 
