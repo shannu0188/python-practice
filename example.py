@@ -712,5 +712,13 @@ students = {
 }
 
 print(students["student1"]["name"])
+student = {
+    "name": "Shannu",
+    "skills": ["Python", "Git", "Linux"],
+    "marks": [80, 85, 90]
+}
+
+print(student["skills"])
+print(student["skills"][0])
 
 
