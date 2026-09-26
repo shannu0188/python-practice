@@ -691,7 +691,14 @@ count = 0
 # price = sorted(num)
 # print(price)
 
+student = {
+    "name": "Shannu",
+    "age": 25,
+    "course": "CSE"
+}
 
+print(student)
+print(student["name"])
 
 
 
