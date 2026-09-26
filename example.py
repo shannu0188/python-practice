@@ -700,6 +700,17 @@ student = {
 print(student)
 print(student["name"])
 
+students = {
+    "student1": {
+        "name": "Shannu",
+        "age": 25
+    },
+    "student2": {
+        "name": "Rahul",
+        "age": 22
+    }
+}
 
+print(students["student1"]["name"])
 
 
