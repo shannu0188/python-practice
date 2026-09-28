@@ -697,19 +697,7 @@ student = {
     "course": "CSE"
 }
 
-print(student)
-print(student["name"])
 
-students = {
-    "student1": {
-        "name": "Shannu",
-        "age": 25
-    },
-    "student2": {
-        "name": "Rahul",
-        "age": 22
-    }
-}
 
 
 
