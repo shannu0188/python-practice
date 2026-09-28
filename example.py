@@ -691,6 +691,20 @@ count = 0
 # price = sorted(num)
 # print(price)
 
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        print(f"My name is {self.name} and I am {self.age} years old.")
+
+
+# Create an object
+student1 = Student("Rahul", 20)
+
+# Call the method
+student1.introduce()
 
 
 
