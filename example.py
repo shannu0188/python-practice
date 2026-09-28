@@ -691,46 +691,41 @@ count = 0
 # price = sorted(num)
 # print(price)
 
-# price.sort(reverse=True)
-# print(price)
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-# dmart = ["rice","dal", "oil"]
-# dmart.reverse()
-# print(dmart)
-# dmart = ["rice","dal", "oil"]
-# first = dmart[::-1]
-# print(first)
+    def introduce(self):
+        print(f"My name is {self.name} and I am {self.age} years old.")
 
-# dmart = ["rice","dal", "oil","wheet"]
-# print(dmart)
-# # dmart.clear()
-# # print(dmart)
 
-# del dmart[0:2]
-# print(dmart)
+# Create an object
+student1 = Student("Rahul", 20)
 
-# today learn time compexity
-# big theta
-# big omega
-# space compelxity
+# Call the method
+student1.introduce()
+class Calculator:
+    def add(self, a, b):
+        return a + b
 
-# import random
+    def subtract(self, a, b):
+        return a - b
 
-# number = random.randint(1, 10)
+    def multiply(self, a, b):
+        return a * b
 
-# guess = int(input("Guess the number (1-10): "))
 
-# if guess == number:
-#     print("🎉 Correct!")
-# else:
-#     print("❌ Wrong! The number was", number)
+calc = Calculator()
 
-# password = input("Enter password: ")
+print(calc.add(10, 5))
+print(calc.subtract(10, 5))
+print(calc.multiply(10, 5))
 
-# if len(password) >= 8:
-#     print("Strong password")
-# else:
-#     print("Password is too short")
+
+
+
+
 
 class Calculator:
     def add(self, a, b):
