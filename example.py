@@ -690,6 +690,10 @@ count = 0
 
 # price = sorted(num)
 # print(price)
+robot_position = (10, 20, 30)
 
+print(robot_position[0])
+print(robot_position[1])
+print(robot_position[2])
 
 
