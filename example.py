@@ -691,34 +691,5 @@ count = 0
 # price = sorted(num)
 # print(price)
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
 
-    def introduce(self):
-        print(f"My name is {self.name} and I am {self.age} years old.")
-
-
-# Create an object
-student1 = Student("Rahul", 20)
-
-# Call the method
-student1.introduce()
-class Calculator:
-    def add(self, a, b):
-        return a + b
-
-    def subtract(self, a, b):
-        return a - b
-
-    def multiply(self, a, b):
-        return a * b
-
-
-calc = Calculator()
-
-print(calc.add(10, 5))
-print(calc.subtract(10, 5))
-print(calc.multiply(10, 5))
 
