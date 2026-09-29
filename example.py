@@ -696,4 +696,7 @@ print(robot_position[0])
 print(robot_position[1])
 print(robot_position[2])
 
+detected_objects = {"person", "chair", "cup", "person"}
+
+print(detected_objects)
 
