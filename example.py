@@ -725,3 +725,23 @@ car1 = Car("Toyota", "Fortuner", 2025)
 car1.display_info()
 car1.start()
 car1.stop()
+
+class Car:
+    def __init__(self, brand, speed):
+        self.brand = brand
+        self.__speed = speed   # private variable
+
+    def show_speed(self):
+        print("Speed:", self.__speed)
+
+    def increase_speed(self, value):
+        self.__speed += value
+
+
+car1 = Car("Toyota", 100)
+
+car1.show_speed()
+
+car1.increase_speed(20)
+
+car1.show_speed()
