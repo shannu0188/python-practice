@@ -690,13 +690,38 @@ count = 0
 
 # price = sorted(num)
 # print(price)
-robot_position = (10, 20, 30)
+# robot_position = (10, 20, 30)
 
-print(robot_position[0])
-print(robot_position[1])
-print(robot_position[2])
+# print(robot_position[0])
+# print(robot_position[1])
+# print(robot_position[2])
 
-detected_objects = {"person", "chair", "cup", "person"}
+# detected_objects = {"person", "chair", "cup", "person"}
 
-print(detected_objects)
+# print(detected_objects)
 
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def start(self):
+        print(f"{self.brand} {self.model} is starting...")
+
+    def stop(self):
+        print(f"{self.brand} {self.model} is stopped.")
+
+    def display_info(self):
+        print("Brand:", self.brand)
+        print("Model:", self.model)
+        print("Year:", self.year)
+
+
+# Create object
+car1 = Car("Toyota", "Fortuner", 2025)
+
+# Access methods
+car1.display_info()
+car1.start()
+car1.stop()
