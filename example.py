@@ -765,18 +765,45 @@ count = 0
 # car.stop()       # inherited from Car
 # car.turbo()      # BMW's own method
 
-class Car:
-    def move(self):
-        print("Car is driving")
+# class Car:
+#     def move(self):
+#         print("Car is driving")
 
 
-class Bike:
-    def move(self):
-        print("Bike is riding")
+# class Bike:
+#     def move(self):
+#         print("Bike is riding")
 
 
-car = Car()
-bike = Bike()
+# car = Car()
+# bike = Bike()
 
-car.move()
-bike.move()
+# car.move()
+# bike.move()
+from abc import ABC, abstractmethod
+
+
+class Car(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+
+class BMW(Car):
+
+    def start(self):
+        print("BMW engine started")
+
+
+class Tesla(Car):
+
+    def start(self):
+        print("Tesla motor started")
+
+
+car1 = BMW()
+car2 = Tesla()
+
+car1.start()
+car2.start()
