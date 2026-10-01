@@ -746,21 +746,37 @@ count = 0
 
 # car1.show_speed()
 
+# class Car:
+#     def start(self):
+#         print("Car is starting")
+
+#     def stop(self):
+#         print("Car is stopping")
+
+
+# class BMW(Car):
+#     def turbo(self):
+#         print("BMW turbo is ON")
+
+
+# car = BMW()
+
+# car.start()      # inherited from Car
+# car.stop()       # inherited from Car
+# car.turbo()      # BMW's own method
+
 class Car:
-    def start(self):
-        print("Car is starting")
-
-    def stop(self):
-        print("Car is stopping")
+    def move(self):
+        print("Car is driving")
 
 
-class BMW(Car):
-    def turbo(self):
-        print("BMW turbo is ON")
+class Bike:
+    def move(self):
+        print("Bike is riding")
 
 
-car = BMW()
+car = Car()
+bike = Bike()
 
-car.start()      # inherited from Car
-car.stop()       # inherited from Car
-car.turbo()      # BMW's own method
+car.move()
+bike.move()
