@@ -700,48 +700,67 @@ count = 0
 
 # print(detected_objects)
 
-class Car:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
+# class Car:
+#     def __init__(self, brand, model, year):
+#         self.brand = brand
+#         self.model = model
+#         self.year = year
 
+#     def start(self):
+#         print(f"{self.brand} {self.model} is starting...")
+
+#     def stop(self):
+#         print(f"{self.brand} {self.model} is stopped.")
+
+#     def display_info(self):
+#         print("Brand:", self.brand)
+#         print("Model:", self.model)
+#         print("Year:", self.year)
+
+
+# # Create object
+# car1 = Car("Toyota", "Fortuner", 2025)
+
+# # Access methods
+# car1.display_info()
+# car1.start()
+# car1.stop()
+
+# class Car:
+#     def __init__(self, brand, speed):
+#         self.brand = brand
+#         self.__speed = speed   # private variable
+
+#     def show_speed(self):
+#         print("Speed:", self.__speed)
+
+#     def increase_speed(self, value):
+#         self.__speed += value
+
+
+# car1 = Car("Toyota", 100)
+
+# car1.show_speed()
+
+# car1.increase_speed(20)
+
+# car1.show_speed()
+
+class Car:
     def start(self):
-        print(f"{self.brand} {self.model} is starting...")
+        print("Car is starting")
 
     def stop(self):
-        print(f"{self.brand} {self.model} is stopped.")
-
-    def display_info(self):
-        print("Brand:", self.brand)
-        print("Model:", self.model)
-        print("Year:", self.year)
+        print("Car is stopping")
 
 
-# Create object
-car1 = Car("Toyota", "Fortuner", 2025)
-
-# Access methods
-car1.display_info()
-car1.start()
-car1.stop()
-
-class Car:
-    def __init__(self, brand, speed):
-        self.brand = brand
-        self.__speed = speed   # private variable
-
-    def show_speed(self):
-        print("Speed:", self.__speed)
-
-    def increase_speed(self, value):
-        self.__speed += value
+class BMW(Car):
+    def turbo(self):
+        print("BMW turbo is ON")
 
 
-car1 = Car("Toyota", 100)
+car = BMW()
 
-car1.show_speed()
-
-car1.increase_speed(20)
-
-car1.show_speed()
+car.start()      # inherited from Car
+car.stop()       # inherited from Car
+car.turbo()      # BMW's own method
