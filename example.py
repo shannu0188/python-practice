@@ -829,3 +829,14 @@ for i in range(len(numbers)):
 else:
     print("Not found")
      
+stack = []
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+
+print(stack)
+
+print("Removed:", stack.pop())
+
+print(stack)
