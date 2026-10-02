@@ -817,3 +817,15 @@ numbers.append(60)
 numbers.remove(30)
 
 print(numbers)
+
+numbers = [10, 20, 30, 40, 50]
+
+target = 40
+
+for i in range(len(numbers)):
+    if numbers[i] == target:
+        print("Found at index:", i)
+        break
+else:
+    print("Not found")
+     
