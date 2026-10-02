@@ -807,3 +807,13 @@ car2 = Tesla()
 
 car1.start()
 car2.start()
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers)
+print(numbers[0])
+
+numbers.append(60)
+numbers.remove(30)
+
+print(numbers)
