@@ -891,6 +891,16 @@ def selection_sort(arr):
 
 print(selection_sort([5, 2, 8, 1, 3]))
 
+from collections import deque
+
+q = deque()
+
+q.append(10)
+q.append(20)
+q.append(30)
+
+print(q.popleft())  # 10
+
 
 
 
