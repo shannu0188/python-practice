@@ -901,6 +901,15 @@ q.append(30)
 
 print(q.popleft())  # 10
 
+freq = {}
+
+arr = [1, 2, 2, 3, 3, 3]
+
+for x in arr:
+    freq[x] = freq.get(x, 0) + 1
+
+print(freq)
+
 
 
 
