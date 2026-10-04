@@ -910,6 +910,12 @@ for x in arr:
 
 print(freq)
 
+seen = set()
+
+for x in [1, 2, 2, 3, 1]:
+    if x in seen:
+        print("Duplicate:", x)
+    seen.add(x)
 
 
 
