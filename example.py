@@ -979,6 +979,20 @@ def bubble_sort(arr):
 
     return arr
 
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+
+
+def inorder(root):
+    if root is None:
+        return
+
+    inorder(root.left)
+    print(root.val, end=" ")
+    inorder(root.right)
 
 
 
