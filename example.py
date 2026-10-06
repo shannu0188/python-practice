@@ -1008,6 +1008,15 @@ def bfs(graph, start):
                 visited.add(neighbor)
                 queue.append(neighbor)
 
+def dfs(graph, node, visited):
+    if node in visited:
+        return
+
+    visited.add(node)
+    print(node)
+
+    for neighbor in graph[node]:
+        dfs(graph, neighbor, visited)
 
 
 
