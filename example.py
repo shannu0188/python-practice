@@ -1008,28 +1008,6 @@ def bfs(graph, start):
                 visited.add(neighbor)
                 queue.append(neighbor)
 
-def dfs(graph, node, visited):
-    if node in visited:
-        return
-
-    visited.add(node)
-    print(node)
-
-    for neighbor in graph[node]:
-        dfs(graph, neighbor, visited)
-
-
-def fibonacci(n):
-    if n <= 1:
-        return n
-
-    dp = [0] * (n + 1)
-    dp[1] = 1
-
-    for i in range(2, n + 1):
-        dp[i] = dp[i - 1] + dp[i - 2]
-
-    return dp[n]
 
 
 
