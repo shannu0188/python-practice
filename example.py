@@ -949,6 +949,10 @@ ll.insert(30)
 
 ll.display()
 
+text = "python programming"
+freq = {c: text.count(c) for c in set(text) if c != " "}
+print(freq)
+print(max(freq, key=freq.get))
 
 
 
