@@ -950,7 +950,10 @@ ll.insert(30)
 ll.display()
 
 
-
+data = {"user": {"name": "Shannu", "skills": ["Python", "C++"]}}
+print(data["user"]["name"])
+print(data["user"]["skills"])
+print(len(data["user"]["skills"]))
 
 
 
