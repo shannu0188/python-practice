@@ -950,19 +950,5 @@ ll.insert(30)
 ll.display()
 
 
-data = {"user": {"name": "Shannu", "skills": ["Python", "C++"]}}
-print(data["user"]["name"])
-print(data["user"]["skills"])
-print(len(data["user"]["skills"]))
-
-matrix = [[1, 2, 3], [4, 5, 6]]
-transpose = [[row[i] for row in matrix] for i in range(3)]
-print(transpose)
-print(len(transpose))
-
-matrix = [[1, 2, 3], [4, 5, 6]]
-transpose = [[row[i] for row in matrix] for i in range(3)]
-print(transpose)
-print(len(transpose))
 
 
