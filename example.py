@@ -954,5 +954,8 @@ primes = [n for n in nums if all(n % i for i in range(2, int(n**0.5)+1))]
 print(primes)
 print(len(primes))
 
-
+nums = [4, 2, 4, 7, 2, 9, 7]
+unique = list(dict.fromkeys(nums))
+print(unique)
+print(len(unique))
 
