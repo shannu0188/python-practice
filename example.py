@@ -965,3 +965,8 @@ print(transpose)
 print(len(transpose))
 
 
+def logger(f): return lambda *a, **k: (print(f"Running {f.__name__}"), f(*a, **k))[1]
+@logger
+def power(n): return n ** 10
+print(power(5))
+
