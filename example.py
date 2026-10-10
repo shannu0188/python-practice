@@ -970,3 +970,9 @@ def logger(f): return lambda *a, **k: (print(f"Running {f.__name__}"), f(*a, **k
 def power(n): return n ** 10
 print(power(5))
 
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n): yield a; a, b = b, a + b
+print(list(fibonacci(10)))
+
+
