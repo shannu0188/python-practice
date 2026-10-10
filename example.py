@@ -975,4 +975,12 @@ def fibonacci(n):
     for _ in range(n): yield a; a, b = b, a + b
 print(list(fibonacci(10)))
 
+class Meta(type): pass
+class User(metaclass=Meta): pass
+User.role = "Admin"
+print(type(User).__name__, User.role)
+
+
+
+
 
