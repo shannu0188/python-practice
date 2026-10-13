@@ -949,10 +949,7 @@ ll.insert(30)
 
 ll.display()
 
-nums = range(2, 30)
-primes = [n for n in nums if all(n % i for i in range(2, int(n**0.5)+1))]
-print(primes)
-print(len(primes))
+
 
 
 
