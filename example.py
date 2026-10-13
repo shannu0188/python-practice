@@ -954,7 +954,33 @@ age = int(input("Enter your age: "))
 print("Hello,", name)
 print("You are", age, "years old.")
 print("Welcome to Python!")
+from abc import ABC, abstractmethod
 
+
+class Car(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+
+class BMW(Car):
+
+    def start(self):
+        print("BMW engine started")
+
+
+class Tesla(Car):
+
+    def start(self):
+        print("Tesla motor started")
+
+
+car1 = BMW()
+car2 = Tesla()
+
+car1.start()
+car2.start()
 
 
 
