@@ -969,28 +969,3 @@ class BMW(Car):
     def start(self):
         print("BMW engine started")
 
-
-class Tesla(Car):
-
-    def start(self):
-        print("Tesla motor started")
-
-
-car1 = BMW()
-car2 = Tesla()
-
-car1.start()
-car2.start()
-
-
-
-
-
-
-
-
-
-
-
-
-
