@@ -974,3 +974,11 @@ url = "https://api.github.com"
 response = requests.get(url)
 print(response.status_code)
 print(response.json())
+
+import requests
+url = "https://dog.ceo/api/breeds/image/random"
+data = requests.get(url).json()
+print("Random Dog Image:")
+print(data["message"])
+
+
