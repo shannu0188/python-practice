@@ -947,7 +947,19 @@ ll.insert(10)
 ll.insert(20)
 ll.insert(30)
 
+
+
 ll.display()
+
+
+w = [10, 20, 30]
+v = [60, 100, 120]
+cap = 50
+items = sorted(zip(w, v), key=lambda x: x[1]/x[0], reverse=True)
+total = 0
+for wt, val in items:
+    if wt <= cap: total += val; cap -= wt
+print("Value =", total)
 
 name = input("Enter your name: ")
 age = int(input("Enter your age: "))
