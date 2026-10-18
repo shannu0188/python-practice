@@ -977,3 +977,13 @@ for i in range(1, len(a)):
         j -= 1
     a[j+1] = key
 print(a)
+def merge(a):
+    if len(a) <= 1: return a
+    m = len(a)//2
+    l, r = merge(a[:m]), merge(a[m:])
+    b = []
+    while l and r: b.append((l if l[0] < r[0] else r).pop(0))
+    return b + l + r
+print(merge([5, 2, 8, 1, 3]))
+
+
