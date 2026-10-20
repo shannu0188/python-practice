@@ -1001,3 +1001,9 @@ print(merge([5, 2, 8, 1, 3]))
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 c = int(input("Enter third number: "))
+
+n = int(input("Enter a number: "))
+digits = str(n)
+total = sum(int(d) ** len(digits) for d in digits)
+
+print("Armstrong" if total == n else "Not Armstrong")
