@@ -1,4 +1,4 @@
-# a = 20
+ji# a = 20
 # b = 3
 
 # print(f"{a} dividedd by {b} is {a / b}")
@@ -998,12 +998,3 @@ def merge(a):
     return b + l + r
 print(merge([5, 2, 8, 1, 3]))
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
-
-n = int(input("Enter a number: "))
-digits = str(n)
-total = sum(int(d) ** len(digits) for d in digits)
-
-print("Armstrong" if total == n else "Not Armstrong")
