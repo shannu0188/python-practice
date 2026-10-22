@@ -941,7 +941,15 @@ class LinkedList:
 
         print("None")
 
+def inspect_materials():
+    status = input("Are materials approved? (yes/no): ")
 
+    if status.lower() == "yes":
+        print("Materials approved.")
+        return True
+    else:
+        print("Materials rejected.")
+        return False
 ll = LinkedList()
 ll.insert(10)
 ll.insert(20)
