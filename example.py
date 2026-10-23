@@ -975,19 +975,3 @@ print("Hello,", name)
 print("You are", age, "years old.")
 print("Welcome to Python!")
 from abc import ABC, abstractmethod
-def assemble_parts():
-    parts = [
-        "Wheels and tyres",
-        "Braking system",
-        "Suspension system",
-        "Electrical wiring",
-        "Dashboard and seats",
-        "Doors and windows"
-    ]
-
-    for part in parts:
-        print("Installing:", part)
-
-    print("All components assembled.")
-
-    
