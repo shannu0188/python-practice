@@ -969,3 +969,50 @@ for wt, val in items:
     if wt <= cap: total += val; cap -= wt
 print("Value =", total)
 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load sales data
+df = pd.read_csv("sales.csv")
+
+# Inspect the data
+print(df.head())
+print(df.info())
+
+# Clean the data
+df = df.drop_duplicates()
+df["Sales"] = pd.to_numeric(df["Sales"], errors="coerce")
+df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+df = df.dropna(subset=["Sales", "Date"])
+
+# Calculate KPIs
+total_sales = df["Sales"].sum()
+average_sales = df["Sales"].mean()
+total_transactions = len(df)
+
+print("Total Sales:", round(total_sales, 2))
+print("Average Sales:", round(average_sales, 2))
+print("Transactions:", total_transactions)
+
+# Monthly sales trend
+df["Month"] = df["Date"].dt.to_period("M")
+monthly_sales = df.groupby("Month")["Sales"].sum()
+
+print(monthly_sales)
+
+# Visualize monthly sales
+monthly_sales.index = monthly_sales.index.astype(str)
+monthly_sales.plot(kind="line", marker="o", figsize=(10, 5))
+
+plt.title("Monthly Sales Trend")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+# Sales by region
+if "Region" in df.columns:
+    region_sales = df.groupby("Region")["Sales"].sum()
+    print(region_sales.sort_values(ascending=False))
