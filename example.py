@@ -1011,8 +1011,3 @@ plt.ylabel("Sales")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
-
-# Sales by region
-if "Region" in df.columns:
-    region_sales = df.groupby("Region")["Sales"].sum()
-    print(region_sales.sort_values(ascending=False))
