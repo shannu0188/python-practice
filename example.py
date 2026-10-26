@@ -1011,3 +1011,12 @@ plt.ylabel("Sales")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
+import math
+
+x1, y1 = 2, 3
+x2, y2 = 5, 7
+
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print("Euclidean Distance:", distance)
