@@ -1028,3 +1028,12 @@ x2, y2 = 5, 7
 distance = abs(x2 - x1) + abs(y2 - y1)
 
 print("Manhattan Distance:", distance)
+
+from geopy.distance import geodesic
+
+point1 = (12.9716, 77.5946)  # Bengaluru
+point2 = (13.0827, 80.2707)  # Chennai
+
+distance = geodesic(point1, point2).km
+
+print("Distance:", round(distance, 2), "km")
