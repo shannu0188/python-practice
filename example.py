@@ -1020,3 +1020,11 @@ x2, y2 = 5, 7
 distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
 print("Euclidean Distance:", distance)
+
+
+x1, y1 = 2, 3
+x2, y2 = 5, 7
+
+distance = abs(x2 - x1) + abs(y2 - y1)
+
+print("Manhattan Distance:", distance)
