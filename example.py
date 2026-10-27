@@ -1070,3 +1070,26 @@ while True:
     except serial.SerialException:
         print("Serial Connection Error")
         break
+
+
+
+
+import nxt
+from nxt.sensor import Touch
+
+try:
+    with nxt.locator.find() as brick:
+        print("NXT Robot Connected Successfully!")
+
+        sensor = Touch(brick, nxt.sensor.Port.S1)
+
+        print("Testing touch sensor... Press and release it.")
+
+        while True:
+            print("Touch sensor value:", sensor.is_pressed())
+
+except KeyboardInterrupt:
+    print("\nSensor test stopped.")
+
+except Exception as e:
+    print("Connection or sensor error:", e)
