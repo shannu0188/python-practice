@@ -1037,3 +1037,36 @@ point2 = (13.0827, 80.2707)  # Chennai
 distance = geodesic(point1, point2).km
 
 print("Distance:", round(distance, 2), "km")
+
+import serial
+import time
+
+# Connect to Arduino (change COM port as needed)
+robot = serial.Serial("COM3", 9600, timeout=2)
+time.sleep(2)
+
+while True:
+    try:
+        data = robot.readline().decode().strip()
+
+        if data:
+            distance = float(data)
+
+            if 2 <= distance <= 400:
+                print("Sensor Working - Distance:", distance, "cm")
+            else:
+                print("Sensor Reading Out of Range")
+
+        else:
+            print("No Sensor Data - Check Connection")
+
+    except ValueError:
+        print("Invalid Sensor Data")
+
+    except KeyboardInterrupt:
+        print("Robot Sensor Test Stopped")
+        break
+
+    except serial.SerialException:
+        print("Serial Connection Error")
+        break
