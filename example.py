@@ -1093,3 +1093,23 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print("Connection or sensor error:", e)
+
+
+
+from ultralytics import YOLO
+
+# Load a pretrained YOLO model
+model = YOLO("yolov8n.pt")
+
+# Train it to detect the four robot classes
+model.train(
+    data="robot_dataset/robot.yaml",
+    epochs=50,
+    imgsz=640,
+    batch=8,
+    project="robot_detection",
+    name="robot_model"
+)
+
+print("Training completed!")
+
