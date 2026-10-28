@@ -1113,3 +1113,14 @@ model.train(
 
 print("Training completed!")
 
+from ultralytics import YOLO
+
+model = YOLO(
+    "robot_detection/robot_model/weights/best.pt"
+)
+
+model.predict(
+    source=0,
+    show=True,
+    conf=0.40
+)
