@@ -1124,3 +1124,72 @@ model.predict(
     show=True,
     conf=0.40
 )
+
+
+
+from ultralytics import YOLO
+import cv2
+
+# Load the trained NXT robot detection model
+model = YOLO("best.pt")
+
+# Four types of NXT robots
+robot_types = [
+    "Line_Follower",
+    "Obstacle_Avoider",
+    "Robotic_Arm",
+    "Mobile_Robot"
+]
+
+# Load input image
+image = cv2.imread("nxt_robot.jpg")
+
+if image is None:
+    raise FileNotFoundError("Image not found: nxt_robot.jpg")
+
+# Detect robots
+results = model.predict(image, conf=0.40)
+
+for result in results:
+    for box in result.boxes:
+        class_id = int(box.cls[0])
+        confidence = float(box.conf[0])
+
+        x1, y1, x2, y2 = map(
+            int, box.xyxy[0].tolist()
+        )
+
+        if class_id < len(robot_types):
+            name = robot_types[class_id]
+        else:
+            name = f"Class_{class_id}"
+
+        # Draw bounding box
+        cv2.rectangle(
+            image,
+            (x1, y1),
+            (x2, y2),
+            (0, 255, 0),
+            2
+        )
+
+        # Add label
+        label = f"{name}: {confidence:.2f}"
+        cv2.putText(
+            image,
+            label,
+            (x1, max(y1 - 10, 20)),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.6,
+            (0, 255, 0),
+            2
+        )
+
+        print(f"Detected: {name}, Confidence: {confidence:.2%}")
+
+# Display result
+cv2.imshow("NXT Robot Detection", image)
+cv2.imwrite("nxt_detection_result.jpg", image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
