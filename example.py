@@ -1214,3 +1214,26 @@ move_robot_arm("Articulated", 20, 15, 10)
 # 4. Cylindrical robot
 move_robot_arm("Cylindrical", 10, 10, 25)
 
+from nxt.locator import find_one
+from nxt.motor import Motor, PORT_A, PORT_B, PORT_C
+
+brick = find_one()
+
+base = Motor(brick, PORT_A)
+shoulder = Motor(brick, PORT_B)
+gripper = Motor(brick, PORT_C)
+
+# 1. Rotate the base
+base.turn(50, 90)
+
+# 2. Raise the arm
+shoulder.turn(50, 90)
+
+# 3. Close the gripper
+gripper.turn(30, 45)
+
+# 4. Return the arm
+shoulder.turn(50, -90)
+base.turn(50, -90)
+
+print("Robot arm sequence completed")
