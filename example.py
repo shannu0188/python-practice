@@ -1237,3 +1237,32 @@ shoulder.turn(50, -90)
 base.turn(50, -90)
 
 print("Robot arm sequence completed")
+
+from nxt.locator import find_one
+from nxt.motor import Motor, PORT_A, PORT_B, PORT_C
+
+brick = find_one()
+
+base = Motor(brick, PORT_A)
+arm = Motor(brick, PORT_B)
+claw = Motor(brick, PORT_C)
+
+# Step 1: Open the claw
+claw.turn(30, -45)
+
+# Step 2: Lower the arm
+arm.turn(40, -60)
+
+# Step 3: Grab the object
+claw.turn(30, 45)
+
+# Step 4: Lift the object
+arm.turn(40, 60)
+
+# Step 5: Rotate the base
+base.turn(40, 90)
+
+# Step 6: Release the object
+claw.turn(30, -45)
+
+print("Pick and place completed!")
