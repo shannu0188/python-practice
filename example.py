@@ -1193,3 +1193,24 @@ cv2.imwrite("nxt_detection_result.jpg", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
+
+import time
+
+def move_robot_arm(robot_type, x, y, z):
+    print(f"\nRobot type: {robot_type}")
+    print(f"Moving to X={x}, Y={y}, Z={z}")
+    time.sleep(1)
+    print("Movement completed!")
+
+# 1. Cartesian robot
+move_robot_arm("Cartesian", 10, 20, 30)
+
+# 2. SCARA robot
+move_robot_arm("SCARA", 15, 10, 5)
+
+# 3. Articulated robot
+move_robot_arm("Articulated", 20, 15, 10)
+
+# 4. Cylindrical robot
+move_robot_arm("Cylindrical", 10, 10, 25)
+
