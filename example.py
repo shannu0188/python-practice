@@ -1266,3 +1266,11 @@ base.turn(40, 90)
 claw.turn(30, -45)
 
 print("Pick and place completed!")
+
+distance = get_distance()
+if distance <= 30.48:
+    print("Obstacle detected - Stop Robot")
+    stop()
+else:
+    print("No object - Move Forward")
+    forward()
