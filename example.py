@@ -1283,3 +1283,15 @@ while True:
     else:
         forward()
         print("Path clear")
+
+def avoid_obstacle():
+    distance = get_distance()
+    if distance <= 30.48:
+        stop()
+        time.sleep(1)
+        turn_right()
+    else:
+        forward()
+
+while True:
+    avoid_obstacle()
