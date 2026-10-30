@@ -1274,3 +1274,12 @@ if distance <= 30.48:
 else:
     print("No object - Move Forward")
     forward()
+
+while True:
+    distance = get_distance()
+    if distance < 30.48:
+        stop()
+        print("Obstacle detected")
+    else:
+        forward()
+        print("Path clear")
