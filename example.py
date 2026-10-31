@@ -1308,3 +1308,9 @@ camera = cv2.VideoCapture(0)
 ret, frame = camera.read()
 apple = detect_apple(frame)
 print("Apple detected")
+
+import rospy
+rospy.init_node("apple_robot")
+apple = detect_apple()
+if apple:
+    move_robot(apple)
