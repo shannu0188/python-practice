@@ -1,4 +1,4 @@
-ji# a = 20
+moji# a = 20
 # b = 3
 
 # print(f"{a} dividedd by {b} is {a / b}")
@@ -1295,3 +1295,10 @@ def avoid_obstacle():
 
 while True:
     avoid_obstacle()
+
+
+apple = detect_apple()
+if apple:
+    robot.move(apple.x, apple.y)
+    gripper.open()
+    gripper.close()
