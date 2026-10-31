@@ -1314,3 +1314,8 @@ rospy.init_node("apple_robot")
 apple = detect_apple()
 if apple:
     move_robot(apple)
+
+apple = detect_apple()
+x, y, z = get_position(apple)
+arm.move_to(x, y, z)
+arm.gripper_close()
