@@ -1302,3 +1302,9 @@ if apple:
     robot.move(apple.x, apple.y)
     gripper.open()
     gripper.close()
+
+import cv2
+camera = cv2.VideoCapture(0)
+ret, frame = camera.read()
+apple = detect_apple(frame)
+print("Apple detected")
