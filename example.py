@@ -1325,3 +1325,10 @@ board = pyfirmata.Arduino('COM3')
 finger = board.get_pin('d:3:o')
 finger.write(1)
 print("Finger Up")
+
+
+import pyfirmata
+board = pyfirmata.Arduino('COM3')
+finger = board.get_pin('d:3:o')
+finger.write(0)
+print("Finger Down")
