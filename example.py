@@ -1319,3 +1319,9 @@ apple = detect_apple()
 x, y, z = get_position(apple)
 arm.move_to(x, y, z)
 arm.gripper_close()
+
+import pyfirmata
+board = pyfirmata.Arduino('COM3')
+finger = board.get_pin('d:3:o')
+finger.write(1)
+print("Finger Up")
