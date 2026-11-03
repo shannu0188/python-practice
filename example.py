@@ -1362,3 +1362,16 @@ def control_head(angle):
 
 def change_eye_color(color):
     return robot_eyes.set_color(color)
+
+
+def detect_motion(sensor):
+    return sensor.read_motion()
+
+def recognize_voice(audio):
+    return voice_recognition(audio)
+
+def avoid_obstacle(distance):
+    return distance < 20
+
+def move_robot(speed):
+    return motors.set_speed(speed)
