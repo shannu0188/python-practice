@@ -1338,3 +1338,15 @@ board = pyfirmata.Arduino('COM3')
 finger = board.get_pin('d:5:o')
 finger.write(1)
 print("Finger Open")
+
+def robot_blink():
+    return "Blinking eyes"
+
+def robot_move_eyes(direction):
+    return direction
+
+def image_sensing(camera):
+    return camera.read()
+
+def object_detection(image):
+    return detect_objects(image)
