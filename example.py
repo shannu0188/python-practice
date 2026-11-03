@@ -1350,3 +1350,15 @@ def image_sensing(camera):
 
 def object_detection(image):
     return detect_objects(image)
+
+def detect_face(image):
+    return face_detector.detect(image)
+
+def track_object(target):
+    return robot_camera.follow(target)
+
+def control_head(angle):
+    return robot_head.rotate(angle)
+
+def change_eye_color(color):
+    return robot_eyes.set_color(color)
