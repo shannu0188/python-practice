@@ -1383,3 +1383,9 @@ p = np.random.rand(1000, 3)
 cloud = o3d.geometry.PointCloud()
 cloud.points = o3d.utility.Vector3dVector(p)
 o3d.visualization.draw_geometries([cloud])
+
+import cv2
+import matplotlib.pyplot as plt
+img = cv2.imread("robot.jpg")
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+plt.title("Robot Camera Sensing"); plt.show()
