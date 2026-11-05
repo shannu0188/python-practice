@@ -1375,3 +1375,11 @@ def avoid_obstacle(distance):
 
 def move_robot(speed):
     return motors.set_speed(speed)
+
+
+import open3d as o3d
+import numpy as np
+p = np.random.rand(1000, 3)
+cloud = o3d.geometry.PointCloud()
+cloud.points = o3d.utility.Vector3dVector(p)
+o3d.visualization.draw_geometries([cloud])
