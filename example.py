@@ -1389,3 +1389,12 @@ import matplotlib.pyplot as plt
 img = cv2.imread("robot.jpg")
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 plt.title("Robot Camera Sensing"); plt.show()
+
+import numpy as np
+import matplotlib.pyplot as plt
+r = np.linspace(0, 5, 100)
+t = np.linspace(0, 2*np.pi, 100)
+R, T = np.meshgrid(r, t)
+ax = plt.figure().add_subplot(projection='3d')
+ax.plot_surface(R*np.cos(T), R*np.sin(T), 0*R)
+plt.show()
