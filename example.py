@@ -1405,3 +1405,10 @@ x, y = np.meshgrid(range(20), range(20))
 z = np.exp(-((x-10)**2+(y-10)**2)/20)
 ax = plt.figure().add_subplot(projection='3d')
 ax.plot_surface(x, y, z, cmap='hot'); plt.show()
+
+battery = 20
+if battery < 30:
+    print("Charge battery")
+else:
+    print("Battery is okay")
+print("Robot makes a decision")
