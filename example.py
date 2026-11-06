@@ -1420,3 +1420,11 @@ if obstacle:
 else:
     print("Move forward")
 print("Obstacle problem solved")
+
+
+experience = 5
+if experience > 3:
+    print("Robot learned")
+else:
+    print("Robot needs practice")
+print("Learning completed")
