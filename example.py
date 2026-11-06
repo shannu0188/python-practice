@@ -1412,3 +1412,11 @@ if battery < 30:
 else:
     print("Battery is okay")
 print("Robot makes a decision")
+
+
+obstacle = True
+if obstacle:
+    print("Turn left")
+else:
+    print("Move forward")
+print("Obstacle problem solved")
