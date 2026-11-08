@@ -1448,3 +1448,9 @@ class HumanoidRobot:
 
 robot = HumanoidRobot()
 robot.free_time()
+
+def idle_mode(self):
+    self.speak = False
+    self.movement = False
+    self.observe_surroundings()
+    self.wait_for_command()
