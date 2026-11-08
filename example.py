@@ -1454,3 +1454,10 @@ def idle_mode(self):
     self.movement = False
     self.observe_surroundings()
     self.wait_for_command()
+
+
+def waiting_mode(self):
+    print("Robot is waiting calmly...")
+    self.speak = False
+    self.movement = False
+    self.wait_for_command()
