@@ -1437,3 +1437,14 @@ r1 = Robot("Robo1", "Industrial", 10, 100)
 r2 = Robot("Robo2", "Service", 5, 50)
 r3 = Robot("Robo3", "Humanoid", 8, 80)
 r4 = Robot("Robo4", "Mobile", 6, 60)
+
+
+class HumanoidRobot:
+    def free_time(self):
+        print("Robot is silent")
+        print("Robot is observing surroundings")
+        print("Robot is standing calmly")
+        print("Robot is waiting for the next activity")
+
+robot = HumanoidRobot()
+robot.free_time()
