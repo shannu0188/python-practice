@@ -1428,3 +1428,12 @@ if experience > 3:
 else:
     print("Robot needs practice")
 print("Learning completed")
+
+class Robot:
+    def __init__(self, name, type, speed, power):
+        self.name, self.type, self.speed, self.power = name, type, speed, power
+
+r1 = Robot("Robo1", "Industrial", 10, 100)
+r2 = Robot("Robo2", "Service", 5, 50)
+r3 = Robot("Robo3", "Humanoid", 8, 80)
+r4 = Robot("Robo4", "Mobile", 6, 60)
