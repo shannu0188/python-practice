@@ -1469,3 +1469,12 @@ class Walking(Node):
     def __init__(self):
         super().__init__('walking')
         self.get_logger().info('Humanoid walking')
+
+
+
+import rclpy
+from rclpy.node import Node
+class Arm(Node):
+    def __init__(self):
+        super().__init__('arm')
+        self.get_logger().info('Moving arms')
