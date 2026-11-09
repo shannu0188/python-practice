@@ -1461,3 +1461,11 @@ def waiting_mode(self):
     self.speak = False
     self.movement = False
     self.wait_for_command()
+
+
+import rclpy
+from rclpy.node import Node
+class Walking(Node):
+    def __init__(self):
+        super().__init__('walking')
+        self.get_logger().info('Humanoid walking')
