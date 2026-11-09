@@ -1486,3 +1486,10 @@ class Head(Node):
     def __init__(self):
         super().__init__('head')
         self.get_logger().info('Moving head')
+
+import rclpy
+from rclpy.node import Node
+class Voice(Node):
+    def __init__(self):
+        super().__init__('voice')
+        self.get_logger().info('Voice control active')
