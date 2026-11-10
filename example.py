@@ -1508,3 +1508,10 @@ from rclpy.node import Node
 class RGB(Node):
     def __init__(self):
         super().__init__('rgb_sensor')
+
+import rclpy
+from sensor_msgs.msg import Image
+from rclpy.node import Node
+class Thermal(Node):
+    def __init__(self):
+        super().__init__('thermal_sensor')
