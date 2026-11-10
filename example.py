@@ -1493,3 +1493,11 @@ class Voice(Node):
     def __init__(self):
         super().__init__('voice')
         self.get_logger().info('Voice control active')
+
+
+import rclpy
+from sensor_msgs.msg import Image
+from rclpy.node import Node
+class RGB(Node):
+    def __init__(self):
+        super().__init__('rgb_sensor')
