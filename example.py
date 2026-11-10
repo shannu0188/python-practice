@@ -1471,6 +1471,13 @@ class Walking(Node):
         self.get_logger().info('Humanoid walking')
 
 
+import rclpy
+from sensor_msgs.msg import Image
+from rclpy.node import Node
+class Depth(Node):
+    def __init__(self):
+        super().__init__('depth_sensor')
+
 
 import rclpy
 from rclpy.node import Node
