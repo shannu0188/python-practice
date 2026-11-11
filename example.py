@@ -1522,3 +1522,10 @@ from rclpy.node import Node
 from std_msgs.msg import String
 class MyNode(Node):
     def __init__(self): super().__init__('my_node'); self.get_logger().info('Hello ROS 2')
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+node = Node('publisher')
+pub = node.create_publisher(String, 'topic', 10)
