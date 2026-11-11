@@ -1529,3 +1529,10 @@ from rclpy.node import Node
 from std_msgs.msg import String
 node = Node('publisher')
 pub = node.create_publisher(String, 'topic', 10)
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+node = Node('subscriber')
+sub = node.create_subscription(String, 'topic', lambda msg: print(msg.data), 10)
