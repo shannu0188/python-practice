@@ -1515,3 +1515,10 @@ from rclpy.node import Node
 class Thermal(Node):
     def __init__(self):
         super().__init__('thermal_sensor')
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+class MyNode(Node):
+    def __init__(self): super().__init__('my_node'); self.get_logger().info('Hello ROS 2')
