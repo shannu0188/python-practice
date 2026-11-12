@@ -1553,3 +1553,10 @@ from cv_bridge import CvBridge
 rclpy.init(); n=rclpy.create_node('image_node'); b=CvBridge()
 n.create_subscription(Image,'/camera/image_raw',lambda m: (lambda x: (cv2.imshow('RGB',x),cv2.imshow('Gray',cv2.cvtColor(x,cv2.COLOR_BGR2GRAY)),cv2.waitKey(1)))(b.imgmsg_to_cv2(m,'bgr8')),10)
 rclpy.spin(n)
+
+import rclpy, cv2
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+rclpy.init(); n=rclpy.create_node('image_node'); b=CvBridge()
+n.create_subscription(Image,'/camera/image_raw',lambda m: (lambda x: (cv2.imshow('RGB',x),cv2.imshow('Gray',cv2.cvtColor(x,6)),cv2.imshow('Binary',cv2.threshold(cv2.cvtColor(x,6),127,255,0)[1]),cv2.waitKey(1)))(b.imgmsg_to_cv2(m,'bgr8')),10)
+rclpy.spin(n)
