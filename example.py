@@ -1536,3 +1536,12 @@ from rclpy.node import Node
 from std_msgs.msg import String
 node = Node('subscriber')
 sub = node.create_subscription(String, 'topic', lambda msg: print(msg.data), 10)
+
+
+import rclpy, cv2
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+node = rclpy.create_node('image_analysis')
+bridge = CvBridge()
+node.create_subscription(Image, '/camera/image_raw', lambda m: [cv2.imshow(n, f(bridge.imgmsg_to_cv2(m, 'bgr8'))) for n,f in [('RGB',lambda x:x),('Gray',lambda x:cv2.cvtColor(x,cv2.COLOR_BGR2GRAY)),('Binary',lambda x:cv2.threshold(cv2.cvtColor(x,cv2.COLOR_BGR2GRAY),127,255,cv2.THRESH_BINARY)[1]),('Edges',lambda x:cv2.Canny(x,100,200))]], 10)
+rclpy.spin(node)
