@@ -1629,3 +1629,12 @@ pub = node.create_publisher(Int32, '/stepper', 10)
 msg = Int32()
 msg.data = 200
 pub.publish(msg)
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float32
+node = Node('servo_motor')
+pub = node.create_publisher(Float32, '/servo', 10)
+msg = Float32()
+msg.data = 90.0
+pub.publish(msg)
