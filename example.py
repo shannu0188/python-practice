@@ -1608,4 +1608,14 @@ def main():
 
 if __name__ == '__main__':
     main()
-     
+
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float32
+node = Node('dc_motor')
+pub = node.create_publisher(Float32, '/dc_motor', 10)
+msg = Float32()
+msg.data = 75.0
+pub.publish(msg)
