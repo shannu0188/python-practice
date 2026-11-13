@@ -1567,3 +1567,45 @@ from cv_bridge import CvBridge
 rclpy.init(); n=rclpy.create_node('image_node'); b=CvBridge()
 n.create_subscription(Image,'/camera/image_raw',lambda m: (lambda x: (cv2.imshow('RGB',x),cv2.imshow('Gray',cv2.cvtColor(x,6)),cv2.imshow('Binary',cv2.threshold(cv2.cvtColor(x,6),127,255,0)[1]),cv2.imshow('Edges',cv2.Canny(x,100,200)),cv2.waitKey(1)))(b.imgmsg_to_cv2(m,'bgr8')),10)
 rclpy.spin(n)
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float32MultiArray
+
+class MotorController(Node):
+
+    def __init__(self):
+        super().__init__('motor_controller')
+
+        self.sub = self.create_subscription(
+            Float32MultiArray,
+            '/motor_commands',
+            self.motor_callback,
+            10
+        )
+
+    def motor_callback(self, msg):
+        if len(msg.data) != 6:
+            self.get_logger().error("Expected 6 motor commands")
+            return
+
+        for i, speed in enumerate(msg.data):
+            self.control_motor(i + 1, speed)
+
+    def control_motor(self, motor_id, command):
+        self.get_logger().info(
+            f"Motor {motor_id}: Command = {command}"
+        )
+        # Send command to actual motor driver here
+
+def main():
+    rclpy.init()
+    node = MotorController()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+     
