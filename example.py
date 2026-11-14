@@ -1,4 +1,4 @@
-moji# a = 20
+# a = 20
 # b = 3
 
 # print(f"{a} dividedd by {b} is {a / b}")
@@ -1644,3 +1644,9 @@ battery = psutil.sensors_battery()
 while True:
     print("Battery:", battery.percent, "%")
     battery = psutil.sensors_battery()
+
+
+import random
+while True:
+    voltage = random.uniform(10.5, 12.6)
+    print("Voltage:", round(voltage, 2), "V")
