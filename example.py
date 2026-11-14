@@ -1638,3 +1638,9 @@ pub = node.create_publisher(Float32, '/servo', 10)
 msg = Float32()
 msg.data = 90.0
 pub.publish(msg)
+
+import psutil
+battery = psutil.sensors_battery()
+while True:
+    print("Battery:", battery.percent, "%")
+    battery = psutil.sensors_battery()
