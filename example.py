@@ -1655,4 +1655,11 @@ while True:
 voltage = 12.2
 if voltage >= 12.0: print("Battery: GOOD")
 elif voltage >= 11.0: print("Battery: LOW")
+
+
+battery = 15
+if battery <= 20:
+    print("WARNING: LOW BATTERY!")
+else:
+    print("Battery: NORMAL")
 else: print("Battery: CRITICAL")
