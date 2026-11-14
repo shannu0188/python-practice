@@ -1650,3 +1650,9 @@ import random
 while True:
     voltage = random.uniform(10.5, 12.6)
     print("Voltage:", round(voltage, 2), "V")
+
+
+voltage = 12.2
+if voltage >= 12.0: print("Battery: GOOD")
+elif voltage >= 11.0: print("Battery: LOW")
+else: print("Battery: CRITICAL")
