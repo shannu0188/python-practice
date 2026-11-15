@@ -1682,3 +1682,12 @@ rclpy.init()
 node = Node('subscriber')
 sub = node.create_subscription(String, 'topic', lambda msg: print(msg.data), 10)
 rclpy.spin(node)
+
+
+import rclpy
+from rclpy.node import Node
+from example_interfaces.srv import AddTwoInts
+rclpy.init()
+node = Node('service_server')
+srv = node.create_service(AddTwoInts, 'add', lambda req, res: (setattr(res, 'sum', req.a + req.b) or res))
+rclpy.spin(node)
