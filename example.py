@@ -1663,3 +1663,13 @@ if battery <= 20:
 else:
     print("Battery: NORMAL")
 else: print("Battery: CRITICAL")
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+rclpy.init()
+node = Node('publisher')
+pub = node.create_publisher(String, 'topic', 10)
+msg = String(); msg.data = "Hello Robot"
+pub.publish(msg)
