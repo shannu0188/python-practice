@@ -1673,3 +1673,12 @@ node = Node('publisher')
 pub = node.create_publisher(String, 'topic', 10)
 msg = String(); msg.data = "Hello Robot"
 pub.publish(msg)
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+rclpy.init()
+node = Node('subscriber')
+sub = node.create_subscription(String, 'topic', lambda msg: print(msg.data), 10)
+rclpy.spin(node)
