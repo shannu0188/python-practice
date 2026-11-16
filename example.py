@@ -1725,3 +1725,16 @@ while not rospy.is_shutdown():
     pose.position.z = 0.0
     pub.publish(pose)
     rate.sleep()
+
+
+import rospy
+from geometry_msgs.msg import Twist
+rospy.init_node('robot_move')
+pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+rate = rospy.Rate(10)
+while not rospy.is_shutdown():
+    move = Twist()
+    move.linear.x = 0.5
+    move.angular.z = 0.2
+    pub.publish(move)
+    rate.sleep()
