@@ -1738,3 +1738,18 @@ while not rospy.is_shutdown():
     move.angular.z = 0.2
     pub.publish(move)
     rate.sleep()
+
+import rospy
+from visualization_msgs.msg import Marker
+rospy.init_node('robot_marker')
+pub = rospy.Publisher('/visualization_marker', Marker, queue_size=10)
+marker = Marker()
+marker.header.frame_id = "base_link"
+marker.type = Marker.CUBE
+marker.action = Marker.ADD
+marker.scale.x = 1.0
+marker.scale.y = 0.5
+marker.scale.z = 0.5
+marker.color.r = 1.0
+marker.color.a = 1.0
+pub.publish(marker)
