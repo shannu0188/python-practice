@@ -1699,3 +1699,15 @@ from example_interfaces.srv import AddTwoInts
 rclpy.init()
 node = Node('service_client')
 client = node.create_client(AddTwoInts, 'add')
+
+
+import rospy
+from urdf_parser_py.urdf import URDF
+robot = URDF.from_xml_file("robot.urdf")
+print("Robot Name:", robot.name)
+print("Links:", robot.link_map.keys())
+print("Joints:", robot.joint_map.keys())
+for link in robot.links:
+    print("Link:", link.name)
+for joint in robot.joints:
+    print("Joint:", joint.name)
