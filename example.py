@@ -1711,3 +1711,17 @@ for link in robot.links:
     print("Link:", link.name)
 for joint in robot.joints:
     print("Joint:", joint.name)
+
+
+import rospy
+from geometry_msgs.msg import Pose
+rospy.init_node('robot_position')
+pub = rospy.Publisher('/robot_pose', Pose, queue_size=10)
+rate = rospy.Rate(10)
+while not rospy.is_shutdown():
+    pose = Pose()
+    pose.position.x = 1.0
+    pose.position.y = 2.0
+    pose.position.z = 0.0
+    pub.publish(pose)
+    rate.sleep()
