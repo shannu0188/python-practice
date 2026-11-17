@@ -1848,29 +1848,6 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 
-# Create a Python package
-ros2 pkg create my_robot --build-type ament_python
-
-# Build workspace
-colcon build
-
-# Source workspace
-source install/setup.bash
-
-# Run node
-ros2 run my_robot my_node
-
-# List nodes
-ros2 node list
-
-# List topics
-ros2 topic list
-
-# Check topic data
-ros2 topic echo /chatter
-
-# List services
-ros2 service list
 
 import rclpy
 from rclpy.node import Node
@@ -1939,3 +1916,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
