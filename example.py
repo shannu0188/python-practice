@@ -1980,3 +1980,65 @@ def main():
 if __name__ == '__main__':
     main()
          
+import rclpy
+from rclpy.node import Node
+import numpy as np
+
+from sensor_msgs.msg import PointCloud2
+from sensor_msgs_py import point_cloud2
+from std_msgs.msg import Header
+
+
+class LidarPublisher(Node):
+
+    def __init__(self):
+        super().__init__('lidar_publisher')
+
+        self.publisher = self.create_publisher(
+            PointCloud2,
+            '/lidar_points',
+            10
+        )
+
+        self.timer = self.create_timer(0.1, self.publish_cloud)
+
+    def publish_cloud(self):
+
+        points = []
+
+        for angle in np.linspace(0, 2*np.pi, 360):
+            x = 5.0 * np.cos(angle)
+            y = 5.0 * np.sin(angle)
+            z = 0.0
+
+            points.append([x, y, z])
+
+        header = Header()
+        header.stamp = self.get_clock().now().to_msg()
+        header.frame_id = 'map'
+
+        cloud = point_cloud2.create_cloud_xyz32(
+            header,
+            points
+        )
+
+        self.publisher.publish(cloud)
+
+
+def main():
+    rclpy.init()
+
+    node = LidarPublisher()
+
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+
+    node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+     
