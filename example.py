@@ -2201,3 +2201,9 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+rclpy.init()
+node = Node('publisher')
