@@ -2219,3 +2219,25 @@ from rclpy.node import Node
 from example_interfaces.srv import AddTwoInts
 rclpy.init()
 node = Node('service_server')
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+
+class NeckMoments(Node):
+    def __init__(self):
+        super().__init__('neck_moments')
+        self.pub = self.create_publisher(String, '/neck_moments', 10)
+        self.timer = self.create_timer(1.0, self.publish_moment)
+        self.moments = ['Flexion', 'Extension', 'Rotation', 'Lateral Flexion']
+        self.i = 0
+
+    def publish_moment(self):
+        msg = String()
+        msg.data = self.moments[self.i % 4]
+        self.pub.publish(msg)
+        self.i += 1
+
+rclpy.init()
+rclpy.spin(NeckMoments())
+rclpy.shutdown()
