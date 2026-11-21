@@ -2257,3 +2257,19 @@ rclpy.init()
 node = NeckExtension()
 rclpy.spin(node)
 rclpy.shutdown()
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+
+class NeckRotation(Node):
+    def __init__(self):
+        super().__init__('neck_rotation')
+        self.pub = self.create_publisher(String, 'neck_movement', 10)
+        self.pub.publish(String(data='Neck Rotation'))
+
+rclpy.init()
+node = NeckRotation()
+rclpy.spin(node)
+rclpy.shutdown()
