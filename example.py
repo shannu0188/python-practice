@@ -2273,3 +2273,23 @@ rclpy.init()
 node = NeckRotation()
 rclpy.spin(node)
 rclpy.shutdown()
+
+
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import JointState
+
+class LegMotion(Node):
+    def __init__(self):
+        super().__init__('leg_motion')
+        self.pub = self.create_publisher(JointState, '/joint_states', 10)
+        self.timer = self.create_timer(1.0, self.move_leg)
+        self.types = ['forward', 'backward', 'left', 'right']
+    def move_leg(self):
+        msg = JointState()
+        msg.name = ['hip', 'knee']
+        msg.position = [0.5, -0.5]
+        self.pub.publish(msg)
+        self.get_logger().info('Leg moving')
+rclpy.init()
+rclpy.spin(LegMotion())
