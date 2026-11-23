@@ -2330,3 +2330,11 @@ class LegSquat(Node):
         self.get_logger().info('Leg squatting')
 rclpy.init()
 rclpy.spin(LegSquat())
+
+import rclpy
+from rclpy.node import Node
+class Hand(Node):
+    def __init__(self):
+        super().__init__('open_hand')
+        self.get_logger().info("Open Hand")
+rclpy.init()
