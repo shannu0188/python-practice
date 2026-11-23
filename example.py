@@ -2338,3 +2338,11 @@ class Hand(Node):
         super().__init__('open_hand')
         self.get_logger().info("Open Hand")
 rclpy.init()
+
+import rclpy
+from rclpy.node import Node
+class Hand(Node):
+    def __init__(self):
+        super().__init__('close_hand')
+        self.get_logger().info("Close Hand")
+rclpy.init()
