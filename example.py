@@ -2394,3 +2394,11 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+msg = String()
+msg.data = "CLOSE"
+self.pub.publish(msg)
+self.get_logger().info("Closing fingers")
+self.get_logger().info("Hand closed")
+self.get_logger().info("Motion completed")
