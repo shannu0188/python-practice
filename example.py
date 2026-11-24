@@ -2402,3 +2402,11 @@ self.pub.publish(msg)
 self.get_logger().info("Closing fingers")
 self.get_logger().info("Hand closed")
 self.get_logger().info("Motion completed")
+
+
+msg = String()
+msg.data = "THUMB_UP"
+self.pub.publish(msg)
+self.get_logger().info("Thumb moving up")
+self.get_logger().info("Thumb raised")
+self.get_logger().info("Motion completed")
