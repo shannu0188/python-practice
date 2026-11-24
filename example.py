@@ -2369,3 +2369,28 @@ class Hand(Node):
     def __init__(self):
         super().__init__('hand_up')
         self.get_logger().info("Hand Up")
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+
+class HandFingerMotions(Node):
+    def __init__(self):
+        super().__init__('hand_finger_motions')
+        self.pub = self.create_publisher(String, '/hand_motion', 10)
+        self.timer = self.create_timer(1.0, self.move_fingers)
+
+    def move_fingers(self):
+        for motion in ['OPEN', 'CLOSE', 'THUMB_UP', 'POINT']:
+            msg = String()
+            msg.data = motion
+            self.pub.publish(msg)
+            self.get_logger().info(f'Finger Motion: {motion}')
+
+def main():
+    rclpy.init()
+    rclpy.spin(HandFingerMotions())
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
