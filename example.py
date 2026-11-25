@@ -2419,3 +2419,12 @@ class Talker(Node):
     def __init__(self):
         super().__init__('talker')
         self.pub = self.create_publisher(String, 'topic', 10)
+
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+class Listener(Node):
+    def __init__(self):
+        super().__init__('listener')
+        self.sub = self.create_subscription(String, 'topic', self.callback, 10)
