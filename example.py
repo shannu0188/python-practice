@@ -2428,3 +2428,11 @@ class Listener(Node):
     def __init__(self):
         super().__init__('listener')
         self.sub = self.create_subscription(String, 'topic', self.callback, 10)
+
+import rclpy
+from rclpy.node import Node
+from example_interfaces.srv import AddTwoInts
+class Service(Node):
+    def __init__(self):
+        super().__init__('service')
+        self.srv = self.create_service(AddTwoInts, 'add', self.callback)
