@@ -2436,3 +2436,20 @@ class Service(Node):
     def __init__(self):
         super().__init__('service')
         self.srv = self.create_service(AddTwoInts, 'add', self.callback)
+
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+
+class Forward(Node):
+    def __init__(self):
+        super().__init__('forward_walk')
+        self.pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.timer = self.create_timer(0.1, self.walk)
+    def walk(self):
+        msg = Twist()
+        msg.linear.x = 0.2
+        self.pub.publish(msg)
+
+rclpy.init()
+rclpy.spin(Forward())
