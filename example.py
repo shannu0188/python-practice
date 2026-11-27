@@ -2487,3 +2487,17 @@ class Left(Node):
 
 rclpy.init()
 rclpy.spin(Left())
+
+
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+
+rclpy.init()
+node = Node('walking_controller')
+pub = node.create_publisher(Twist, '/cmd_vel', 10)
+msg = Twist()
+msg.linear.x = 0.3; pub.publish(msg)   # Forward
+msg.linear.x = -0.3; pub.publish(msg)  # Backward
+msg.linear.x = 0.0; msg.linear.y = 0.3; pub.publish(msg)  # Left
+msg.linear.y = -0.3; pub.publish(msg)  # Right
