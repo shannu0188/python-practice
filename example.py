@@ -2521,3 +2521,26 @@ robot.move(0.3,0.0)   # Forward
 robot.move(-0.3,0.0)  # Backward
 robot.move(0.0,0.3)   # Left
 robot.move(0.0,-0.3)  # Right
+
+
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+
+class Walk(Node):
+ def __init__(self):
+  super().__init__('walk')
+  self.pub=self.create_publisher(Twist,'/cmd_vel',10)
+  self.timer=self.create_timer(1.0,self.walk)
+  self.i=0
+ def walk(self):
+  msg=Twist()
+  directions=[(0.3,0),(-0.3,0),(0,0.3),(0,-0.3)]
+  msg.linear.x,msg.linear.y=directions[self.i]
+  self.pub.publish(msg)
+  self.i=(self.i+1)%4
+
+rclpy.init()
+node=Walk()
+rclpy.spin(node)
+rclpy.shutdown()
