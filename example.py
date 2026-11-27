@@ -2501,3 +2501,23 @@ msg.linear.x = 0.3; pub.publish(msg)   # Forward
 msg.linear.x = -0.3; pub.publish(msg)  # Backward
 msg.linear.x = 0.0; msg.linear.y = 0.3; pub.publish(msg)  # Left
 msg.linear.y = -0.3; pub.publish(msg)  # Right
+
+
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+
+class Walk(Node):
+ def __init__(self):
+  super().__init__('walking')
+  self.pub = self.create_publisher(Twist,'/cmd_vel',10)
+ def move(self,x,y):
+  msg=Twist(); msg.linear.x=x; msg.linear.y=y
+  self.pub.publish(msg)
+
+rclpy.init()
+robot=Walk()
+robot.move(0.3,0.0)   # Forward
+robot.move(-0.3,0.0)  # Backward
+robot.move(0.0,0.3)   # Left
+robot.move(0.0,-0.3)  # Right
